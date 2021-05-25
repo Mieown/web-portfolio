@@ -1,6 +1,7 @@
   .App {
   text-align: center;
   background-color: #7ed8fc;
+  padding: 3em;
   } 
   
   .App-header {
@@ -11,9 +12,15 @@
     justify-content: center;
     font-family: Pulchella Free;
     color: #fc8bb7;
-    font-size: 10em;
+    font-size: 4em;
     }
 
   .main {
     min-height: 100vh;
+  }
+
+  .h2 {
+    font-family: Pulchella Free;
+    color: #fc8bb7;
+    font-size: 3em;
   }
