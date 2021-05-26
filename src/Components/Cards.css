@@ -1,0 +1,29 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    padding: 1em 1em 1em 1em;
+
+}
+
+.card {
+    position: relative;
+    justify-content: center;
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: Pulchella Free;
+    color: #fc8bb7;
+}
+
+.cover-img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: 100% 40%;
+}
