@@ -1,7 +1,7 @@
   .App {
   text-align: center;
   background-color: #7ed8fc;
-  padding: 3em;
+  padding: 4.3em;
   } 
   
   .App-header {
@@ -23,4 +23,15 @@
     font-family: Pulchella Free;
     color: #fc8bb7;
     font-size: 3em;
+  }
+
+  .button-container button {
+    background-color: #fc8bb7;
+    color: #fff;
+    font-size: 1.4em;
+    width: 15%;
+    padding: 0.7em;
+    border: none;
+    font-family: Pulchella Free;
+    margin: 0.3em;
   }

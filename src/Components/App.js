@@ -8,11 +8,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">       
-      <h1>Welcome<br />Frontend Developer</h1>
+      <h1>Hi! I'm Malin,<br />Web Developer & Designer</h1>
       <Circle />
       </header>
       <main className="main">
-        <h2 className="h2">More about me</h2>
+        <div className="button-container">
+          <button>Work</button>
+          <button>About me</button>
+          <button>Contact</button>
+        </div>
       <Card
         name={info[0].name}
         img={info[0].imgSRC}
@@ -33,6 +37,15 @@ function App() {
         img={info[3].imgSRC}
       />
 
+      <Card
+        name={info[4].name}
+        img={info[4].imgSRC}
+      />
+
+      <Card
+        name={info[5].name}
+        img={info[5].imgSRC}
+      />
       </main>
     </div>
   );
