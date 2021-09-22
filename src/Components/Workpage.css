@@ -1,0 +1,86 @@
+.Workpage {
+    text-align: center;
+    /* background-image: url(/src/images/workbgtestgrey.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background: #1f1c1e;
+    /* min-height: 100vh; */
+    padding-top: 4em;
+    } 
+
+.Text-container-work {
+    color: #fff;
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+.Work-header {
+    font-size: 4em;
+    padding-bottom: 0.3em;
+}
+
+.Work-textinfo {
+    font-size: 1em;
+
+}
+
+.Cards-container {
+    padding-top: 4em;
+    padding-bottom: 6em;
+    /* padding: 4em 3em 8em 3em; */
+    }
+
+
+
+
+
+/* .popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 3.5%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+    transition: 0.5s;
+  }
+
+  .bg-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    width: 92.7%;
+    height: 83.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .popup-img {
+    width: 100%;
+  }
+  
+  .popup-info {
+    position: absolute;
+    color: var(--white);
+    width: 44%;
+    height: 75vh;
+    margin-right: -44vw;
+    padding: 3em 2em 3em 3.5em;
+    background-color: rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  } */

@@ -1,0 +1,25 @@
+.Aboutpage {
+    text-align: center;
+    /* background-image: url(/src/images/aboutmebg.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    padding-top: 5em;
+    } 
+
+    .Text-container-about {
+        width: 30%;
+        display: inline-block; 
+        text-align: left;
+        padding-bottom: 4em;
+    }
+
+    .About-header {
+        font-size: 4em;
+        line-height: 1.5;
+    }
+
+    .About-textinfo {
+        font-size: 0.94em;
+        line-height: 1.4;
+    }

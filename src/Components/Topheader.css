@@ -1,0 +1,28 @@
+
+  .Header-links {
+      margin-top: 0em;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  ul {
+      list-style-type: none;
+      font-family: 'Sofia Pro', sans-serif;
+      font-size: 13px;
+      padding: 1.1em;
+      overflow: hidden;
+      /* background-color: rgb(255, 225, 225); */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      /* border-bottom: black 1px solid; */
+  }
+  
+  a {
+    text-decoration: none;
+    padding-left: 3em;
+    color: #000;
+  }

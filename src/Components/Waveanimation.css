@@ -1,0 +1,13 @@
+svg {
+    width: 180px;
+    height: 230px;
+    align-items: center;
+}
+
+path {
+    stroke:rgb(0, 0, 0);
+    stroke-width: 5px;
+    stroke-linecap: round;
+    fill: none;
+}
+  
