@@ -1,38 +1,33 @@
-.Workpage {
-    text-align: center;
-    /* background-image: url(/src/images/workbgtestgrey.svg); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    background: #1f1c1e;
-    /* min-height: 100vh; */
-    padding-top: 4em;
-    } 
+.Work {
+  text-align: center;
+  /* background-image: url(/src/images/workbgtestgrey.svg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background: #1f1c1e;
+  /* min-height: 100vh; */
+  padding-top: 4em;
+}
 
 .Text-container-work {
-    color: #fff;
-    padding-left: 12em;
-    padding-right: 12em;
+  color: #fff;
+  padding-left: 12em;
+  padding-right: 12em;
 }
 
 .Work-header {
-    font-size: 4em;
-    padding-bottom: 0.3em;
+  font-size: 4em;
+  padding-bottom: 0.3em;
 }
 
 .Work-textinfo {
-    font-size: 1em;
-
+  font-size: 1em;
 }
 
 .Cards-container {
-    padding-top: 4em;
-    padding-bottom: 6em;
-    /* padding: 4em 3em 8em 3em; */
-    }
-
-
-
-
+  padding-top: 4em;
+  padding-bottom: 6em;
+  /* padding: 4em 3em 8em 3em; */
+}
 
 /* .popup-bg {
     position: fixed;
