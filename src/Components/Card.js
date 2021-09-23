@@ -11,12 +11,12 @@ function Card(item) {
     <div className="card-container">
       <div className="card">
         <img className="cover-img" src={item.img} alt="project image" />
-            <div className="top">
+            {/* <div className="top">
                 <h2 className="name">{item.name}</h2>
                 <button 
                 className="button-project" 
                 onClick={handleClick}>View Project</button>
-            </div>
+            </div> */}
         </div>
 
         {/* {props.opened ? (<div className={props.classtext}><div className="popup-div"><p className="popup-text">{props.pinfo}</p> </div></div>) : null} */}
