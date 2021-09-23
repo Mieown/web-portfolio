@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './PopUp.css';
 
+// hej
+
 const PopUp = ({ pinfo }) => {
   return (
     <div>
