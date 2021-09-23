@@ -15,104 +15,87 @@ import simonerocha from './images/simonerocha.png';
 import hmconscious from './images/hmconscious.jpeg';
 import hmhome from './images/hmforms.jpeg';
 
-
 const info = [
-    {
-        name: "Rota App",
-        imgSRC: rota,
-        pinfo: "hejsan",
-        classtext: "popup-one",
-    },
-    {
-        name: "Wellbeing insurance",
-        imgSRC: feelgoodinsurancestart,
-        pinfo: "hej",
-        classtext: "popup-two",
-    },
-    {
-        name: "Braive",
-        imgSRC: braivestart,
-        pinfo: "hejsan",
-        classtext: "popup-three",
-    },
-    {
-        name: "VR-game",
-        imgSRC: mygamefabric,
-        pinfo: "hejsan",
-        classtext: "popup-four",
-    },
-    {
-        name: "Ricola",
-        imgSRC: ricolastart,
-        pinfo: "hejsan",
-        classtext: "popup-five",
-    },
-    {
-        name: "Tarot-Api",
-        imgSRC: api,
-        pinfo: "hejsan",
-        classtext: "popup-six",
-    },
-    {
-        name: "First aid therapy",
-        imgSRC: firstaidtherapy,
-        pinfo: "hejsan",
-        classtext: "popup-seven",
-    },
-    {
-        name: "Tounge twister",
-        imgSRC: toungetwister,
-        pinfo: "hejsan",
-        classtext: "popup-eight",
-    },
-    {
-        name: "HM Studio",
-        imgSRC: studioone,
-        pinfo: "hejsan",
-        classtext: "popup-nine",
-    },
-    {
-        name: "Whoolichen x HM",
-        imgSRC: whoolichen,
-        pinfo: "hejsan",
-        classtext: "popup-ten",
-    },
-    {
-        name: "Other&Stories Shoelaces",
-        imgSRC: shoelace,
-        pinfo: "hejsan",
-        classtext: "popup-eleven",
-    },
-    {
-        name: "COS",
-        imgSRC: coscam,
-        pinfo: "hejsan",
-        classtext: "popup-twelwe",
-    },
-    {
-        name: "Other&Stories Box",
-        imgSRC: storiesboxtre,
-        pinfo: "hejsan",
-        classtext: "popup-thirteen",
-    },
-    {
-        name: "Simone Rocha x HM",
-        imgSRC: simonerocha,
-        pinfo: "hejsan",
-        classtext: "popup-fourteen",
-    },
-    {
-        name: "HM Conscious",
-        imgSRC: hmconscious,
-        pinfo: "hejsan",
-        classtext: "popup-fifteen",
-    },
-    {
-        name: "HM Home",
-        imgSRC: hmhome,
-        pinfo: "hejsan",
-        classtext: "popup-sixteen",
-    }
-  ];
-  
-  export default info;
+  {
+    name: 'Rota App',
+    imgSRC: rota,
+    pinfo: 'hejsan',
+  },
+  {
+    name: 'Wellbeing insurance',
+    imgSRC: feelgoodinsurancestart,
+    pinfo: 'Wellbeing insurance',
+  },
+  {
+    name: 'Braive',
+    imgSRC: braivestart,
+    pinfo: 'Braive',
+  },
+  {
+    name: 'VR-game',
+    imgSRC: mygamefabric,
+    pinfo: 'VR-game',
+  },
+  {
+    name: 'Ricola',
+    imgSRC: ricolastart,
+    pinfo: 'Ricola',
+  },
+  {
+    name: 'Tarot-Api',
+    imgSRC: api,
+    pinfo: 'Tarot-Api',
+  },
+  {
+    name: 'First aid therapy',
+    imgSRC: firstaidtherapy,
+    pinfo: 'First aid therapy',
+  },
+  {
+    name: 'Tounge twister',
+    imgSRC: toungetwister,
+    pinfo: 'Tounge twister',
+  },
+  {
+    name: 'HM Studio',
+    imgSRC: studioone,
+    pinfo: 'HM Studio',
+  },
+  {
+    name: 'Whoolichen x HM',
+    imgSRC: whoolichen,
+    pinfo: 'Whoolichen x HM',
+  },
+  {
+    name: 'Other&Stories Shoelaces',
+    imgSRC: shoelace,
+    pinfo: 'Other&Stories Shoelaces',
+  },
+  {
+    name: 'COS',
+    imgSRC: coscam,
+    pinfo: 'COS',
+  },
+  {
+    name: 'Other&Stories Box',
+    imgSRC: storiesboxtre,
+    pinfo: 'Other&Stories Box',
+  },
+  {
+    name: 'Simone Rocha x HM',
+    imgSRC: simonerocha,
+    pinfo: 'Simone Rocha x HM',
+  },
+  {
+    name: 'HM Conscious',
+    imgSRC: hmconscious,
+    pinfo: 'HM Conscious',
+  },
+  {
+    name: 'HM Home',
+    imgSRC: hmhome,
+    pinfo: 'HM Home',
+  },
+];
+
+export default info;

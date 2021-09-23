@@ -1,0 +1,69 @@
+.Header {
+  background-image: url(/src/images/testplastpink.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 10px 40px 0px 40px;
+}
+
+.Main-frame {
+  position: fixed;
+  background: #ffffff;
+  z-index: 9;
+}
+
+.frame-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.frame-right {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40px;
+}
+
+.frame-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.frame-left {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 40px;
+}
+
+.Text-container-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  color: #000000;
+  line-height: 1.45;
+  height: calc(100vh - 75px);
+}
+
+.Header-header {
+  font-size: 4.5em;
+}
+
+.Header-textinfo {
+  font-size: 1.4em;
+}
+
+.Wave-animation-container {
+  margin-top: -10.5em;
+}
+
+.Header-p-text {
+  font-size: 1.2em;
+}
