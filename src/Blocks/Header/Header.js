@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import Waveanimation from '../../Components/WaveAnimation/Waveanimation';
+import startarrow from '../../images/arrowstartbrown.svg';
 
 function Header() {
+
+  const [isName, setIsName] = useState('scroll');
+
+  const changeText = () => {
+    setIsName('down');
+  };
+
+  const changeBackText = () => {
+    setIsName('scroll');
+  };
+
   return (
     <div className="Header">
       <div className="Main-frame frame-top"></div>
@@ -16,10 +28,9 @@ function Header() {
           <Waveanimation />
         </div>
         <div className="P-container">
-          <p className="Header-p-text">
-            Kul att du hittade till mig! Kolla in mina arbeten
-          </p>
+          <h2 className="Header-p-text" onMouseEnter={changeText} onMouseLeave={changeBackText}>{isName}</h2>
         </div>
+        <img className="startarrow" src={startarrow}/>
       </div>
     </div>
   );

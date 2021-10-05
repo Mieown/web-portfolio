@@ -9,9 +9,7 @@ function Work({ isOpened, setIsOpened }) {
       <div className="Text-container-work">
         <h1 className="Work-header">My Work</h1>
         <p className="Work-textinfo">
-          Här är en samling av projekt skapade av mig eller tillsammans med
-          klasskamrater och arbetskamrater. Klicka dig in till dem för att läsa
-          mer om dem.
+          Here is a collection of projects created by me or together with classmates and co-workers. Check them out to find out more about them.
         </p>
       </div>
       <div className="Cards-container">
@@ -23,6 +21,13 @@ function Work({ isOpened, setIsOpened }) {
             img={item.imgSRC}
             pinfo={item.pinfo}
             classtext={item.classtext}
+            img1={item.img1}
+            img2={item.img2}
+            img3={item.img3}
+            img4={item.img4}
+            linktext={item.linktext}
+            linkclasstext={item.linkclasstext} 
+            link={item.link} 
             isOpened={isOpened}
             setIsOpened={setIsOpened}
           />

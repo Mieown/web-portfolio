@@ -2,9 +2,6 @@
     display: flex;
     flex-direction: row;
     display: inline-block;
-    /* padding: 1em 1em 1em 1em;
-    background-color:rgba(219, 219, 216, 0.3);
-    margin: 0.4em; */
 }
 
 .card {
@@ -23,7 +20,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .card:hover .top {
@@ -31,13 +28,15 @@
   }
 
 .name {
+    font-family: 'MBF Taurian', serif;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
+    width: 90%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 0.94em;
-    color: #000000;
+    font-size: 1.45vw;
+    letter-spacing: 0.06em;
+    color: #493011;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -54,15 +53,19 @@
 .button-project {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, 90%);
+    top: 44%;
+    transform: translate(-50%, 50%);
+    background: none;
+    border: #493011 solid 0.25em;
+    color: #493011;
+    font-size: 0.8vw;
+    padding: 1.8em 2em 1.8em 2em;
+    border-radius: 50%;
+    /* font-weight: bold; */
+    letter-spacing: 0.08em;
+    cursor: pointer;
 }
 
-.popup-div {
-    position: absolute;
-    height: 50em;
-    width: 40em;
-    color: violet;
-    z-index: 1000;
-    background-color: yellowgreen;
-}
+.hiddencard {
+    visibility: hidden;
+  }

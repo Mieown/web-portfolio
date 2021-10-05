@@ -1,49 +1,65 @@
 .Contact {
-  /* text-align: center; */
-  /* background-image: url(/src/images/contactleg.svg); */
-  background: #eed6e6;
-  /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
+  background: #f8d0fc;
   min-width: 100vw;
-  padding-top: 4em;
-  padding-left: 27em;
-  padding-right: 27em;
-  padding-bottom: 3em;
+  padding-top: 5em;
+  padding-bottom: 2.6em;
+  display: flex;
+  flex-direction: row;
+  padding-left: 13vw;
+  padding-right: 13vw;
+}
+
+.textcontainer-about {
+  font-family: 'Karla', sans-serif;
+  color: #493011;
+  padding-right: 9vw;
+}
+
+.header-about {
+  font-size: 5.1vw;
+  letter-spacing: 1.1px;
+  margin-bottom: 0.15em;
+  text-align: left;
+}
+
+.text-about {
+  font-size: 1.29vw;
+  line-height: 1.3;
+  letter-spacing: 0.25px;
 }
 
 .Form-text-container {
+  font-family: 'Karla', sans-serif;
+  color: #493011;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: center;
+  text-align: left;
 }
 
-/* .Text-container-contact {
-        display: inline-block; 
-        text-align: left;
-    } */
-
 .Contact-header {
-  font-size: 4em;
-  line-height: 1.5;
+  font-size: 5.1vw;
+  letter-spacing: 1.1px;
+  margin-bottom: 0.15em;
 }
 
 .Contact-textinfo {
-  font-size: 0.94em;
-  font-family: 'Sofia Pro', sans-serif;
-  line-height: 1.4;
+  font-size: 1.29vw;
+  line-height: 1.3;
+  letter-spacing: 0.25px;
 }
 
 .Form-container {
-  margin-top: 1.4em;
+  margin-top: 1.2em;
 }
 
 .Form-control {
-  width: 30em;
-  font-family: 'Sofia Pro', sans-serif;
-  background-color: rgb(255, 255, 255);
+  width: 57vh;
+  font-family: 'Karla', sans-serif;
+  background-color: #ffffff;
+  color: #493011;
   border: none;
-  padding: 0.9em;
+  padding: 0.7em 0.7em 0.7em 0.9em;
   border-radius: 9px;
 }
 
@@ -51,17 +67,33 @@
 .Email-input,
 .Subject-input,
 .Message-input {
-  padding-bottom: 0.7em;
+  padding-bottom: 0.65em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #493011;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #493011;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #493011;
 }
 
 .Btn-submit {
-  margin-top: 1em;
-  margin-bottom: 3em;
-  padding: 1.3em 2.8em 1.3em 2.8em;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  font-family: 'Sofia Pro', sans-serif;
-  border: 0.14em #000;
-  border-style: solid;
-  border-radius: 9px;
+  margin-top: 0.5em;
+  margin-left: 20.5em;
+  color: #493011;
+  padding: 1.5em 1.7em 1.5em 1.7em;
+  border: #493011 solid 0.20em;
+  border-radius: 50%;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.85vh;
+  background: none;
+  /* border: none;
+  outline: none; */
+  cursor: pointer;
 }

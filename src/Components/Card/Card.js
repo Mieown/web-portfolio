@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-function Card({ img, name, isOpened, setIsOpened, index }) {
+function Card({ img, name, classtext, isOpened, setIsOpened, index }) {
   // function handleClick() {
   //   setIsOpened();
   // }
@@ -14,7 +14,7 @@ function Card({ img, name, isOpened, setIsOpened, index }) {
   };
 
   return (
-    <div className="card-container">
+    <div className={classtext}>
       <div className="card">
         <img className="cover-img" src={img} alt="project" />
         <div className="top">

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
+// import hellothere from '../../images/hellothere.jpg';
 
 export default function Contact() {
   function sendEmail(e) {
@@ -26,12 +27,31 @@ export default function Contact() {
 
   return (
     <div className="Contact">
+
+      <div className="textcontainer-about">
+        <h1 className="header-about">About</h1>
+        <p className="text-about">
+        
+        I’m a frontend developer and designer from Jämtland, in northern Sweden currently based in Stockholm. I'm in my second year of the Frontend program on Hyper Island. I have previously worked with graphic design and packaging development.
+        <br />
+        <br />
+        I like problem solving and have a keen eye for details and beautiful designs. I am determination to always try to better myself with every project I work on. The main areas of my knowledge are HTML (5), CSS (3), JavaScript (native)
+        and React. I regularly use version control system (GIT) to maintain my code.
+        Based on the design part, the main areas of my knowledge are Illustrator, Indesign, Photoshop, Premiere Pro and Figma.
+        <br />
+        <br />
+        When I'm not coding, you can find me out in the nature, either on a mountain, in the forest or by the sea. Always looking for new places to explore with my friends and family.
+
+        </p>
+      </div>
+
+
       <div className="Form-text-container">
         <div className="Text-container-contact">
-          <h1 className="Contact-header">Contact me</h1>
+          <h1 className="Contact-header">Contact</h1>
           <p className="Contact-textinfo">
             If you find me interesting or have questions, <br />
-            don't be afraid to contact me.
+            don’t hesitate to use the form.
           </p>
         </div>
 
@@ -79,7 +99,10 @@ export default function Contact() {
             </div>
           </form>
         </div>
-      </div>
+    </div>
+      {/* <div className="image-container-contact">
+        <img className="hello-image" src={hellothere}/>
+      </div> */}
     </div>
   );
 }

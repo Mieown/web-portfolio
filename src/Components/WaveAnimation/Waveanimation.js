@@ -5,7 +5,7 @@ import './Waveanimation.css';
 function Waveanimation() {
 
 let xs = []
-for (var i = 0; i < 170; i++) {
+for (var i = 0; i < 150; i++) {
   xs.push(i)
 }
 
@@ -15,7 +15,7 @@ function animate() {
 
   let points = xs.map(x => {
 
-    let y = 200 + 4.5 * Math.sin((x + t) /3)
+    let y = 200 + 5 * Math.sin((x + t) /4)
     
     return [x, y]
   })
@@ -26,7 +26,7 @@ function animate() {
 
   document.querySelector("path").setAttribute("d", path)
 
-  t += 0.4
+  t += 0.42
 
   requestAnimationFrame(animate)
 }

@@ -1,0 +1,23 @@
+.Footer ul {
+    background: #f8d0fc;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.1em;
+    padding-bottom: 4.5em;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    list-style-type: none;
+  }
+
+.Footer-links {
+    font-size: 1.29vw;
+    color: #493011;
+    letter-spacing: 0.25px;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: #493011;
+}
