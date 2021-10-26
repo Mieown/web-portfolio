@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './Work.css';
 import info from '../../info';
 import Card from '../../Components/Card/Card';
 
 function Work({ isOpened, setIsOpened }) {
   return (
-    <div className="Work">
+    <div className="Work" id="workLink">
       <div className="Text-container-work">
         <h1 className="Work-header">My Work</h1>
         <p className="Work-textinfo">
-          Here is a collection of projects created by me or together with classmates and co-workers. Check them out to find out more about them.
+          Here is a collection of projects created by me or together with classmates and co-workers. Read more about each project and how they have been created.
         </p>
       </div>
       <div className="Cards-container">

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import './Waveanimation.css';
+import './WaveLoading.css';
 
 
-function Waveanimation() {
+function WaveLoading() {
 
 let xs = []
-for (var i = 0; i < 140; i++) {
+for (var i = 0; i < 150; i++) {
   xs.push(i)
 }
 
@@ -44,7 +44,7 @@ useEffect(() => {
 });
 
   return (
-    <div className="Waveanimation">
+    <div className="WaveLoading">
       <svg>
         <path d="M10,10 L50,100 L90,50"></path>
       </svg>
@@ -52,4 +52,4 @@ useEffect(() => {
   );
 }
 
-export default Waveanimation;
+export default WaveLoading;

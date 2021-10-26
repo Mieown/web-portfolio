@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Waveanimation from '../../Components/WaveAnimation/Waveanimation';
 import startarrow from '../../images/arrowstartbrown.svg';
@@ -23,7 +23,7 @@ function Header() {
       <div className="Main-frame frame-bottom"></div>
       <div className="Text-container-start">
         <h1 className="Header-header">Hi! I'm Malin</h1>
-        <h2 className="Header-textinfo">A Frontend developer & Designer</h2>
+        <h2 className="Header-textinfo">Frontend developer & Designer</h2>
         <div className="Wave-animation-container">
           <Waveanimation />
         </div>

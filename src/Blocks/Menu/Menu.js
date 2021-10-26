@@ -9,28 +9,28 @@ function Menu() {
       <nav className="Menu-links">
         <ul>
           <li>
-            <a className="linkMenu" href="#">About</a>
+            <a className="linkMenu" href="#contactLink">About</a>
           </li>
           <li>
-            <a className="linkMenu" href="#">Work</a>
+            <a className="linkMenu" href="#workLink">Work</a>
           </li>
           <li>
-            <a className="linkMenu" href="#">Contact</a>
+            <a className="linkMenu" href="#contactLink">Contact</a>
           </li>
         </ul>
       </nav>
 
       <div className="logo-menu-container">
-      <img className="m-logo" src={mlogo}/>
+      <a className="linkMenuLogo" href="#"><img className="m-logo" src={mlogo}/></a>
       </div>
 
       <nav className="Menu-links-bottom">
         <ul>
           <li>
-            <a className="linkMenuBottom" href="#">Github</a>
+            <a className="linkMenuBottom" href="https://github.com/Mieown" target='_blank'>Github</a>
           </li>
           <li>
-            <a className="linkMenuBottom" href="#">Linkedin</a>
+            <a className="linkMenuBottom" href="https://linkedin.com/in/malin-olofsson-611619a6" target='_blank'>Linkedin</a>
           </li>
         </ul>
       </nav>

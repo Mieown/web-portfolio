@@ -1,36 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SimpleImageSlider from "react-simple-image-slider";
 import './Slider.css';
 
 
 const Slider = ({ img1, img2, img3, img4 }) => {
 
-  // const [isWidth, setIsWidth] = useState(10 + 'em');
-  // const [isHeight, setIsHeight] = useState(5 + 'em');
+  const [isWidth, setIsWidth] = useState(43 + 'vw');
+  const [isHeight, setIsHeight] = useState(42.9 + 'vh');
 
-  // const setWidthHeight = () => {
-  //   setIsWidth(550);   
-  //   setIsHeight(310);
-  // };
+  const images = [
+    { url: img1 },
+    { url: img2 },
+    { url: img3 },
+    { url: img4 },
+  ];
 
-  // window.addEventListener("DOMContentLoaded", e=> {
-  //   setWidthHeight()
-  // });
+  useEffect(() => {
+   
+    console.log(window.innerWidth);
 
-    const images = [
-        { url: img1 },
-        { url: img2 },
-        { url: img3 },
-        { url: img4 },
-      ];
+    if (window.innerWidth < 600) {
+      setIsWidth(68 + 'vw');
+      setIsHeight(21 + 'vh'); 
+    }   else if (window.innerWidth < 800) {
+      setIsWidth(69 + 'vw');
+      setIsHeight(29 + 'vh'); 
+    } else {
+      setIsWidth(43 + 'vw');
+      setIsHeight(42.9 + 'vh'); 
+  }
+
+});
+
+//   return () => clearInterval(intervalId);
+// }, [isActive])
 
   return (
     <div>
       <SimpleImageSlider
-        // width={14 + 'em'}
-        // height={19.375 + 'em'}
-        width={43 + 'vw'}
-        height={42.9 + 'vh'}
+        width={isWidth}
+        height={isHeight}
         images={images}
         navSize={20}
         showBullets={true}

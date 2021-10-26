@@ -9,9 +9,6 @@ function Footer() {
           <li>
             <a className="linkFooter" href="#">2021 | Malin Olofsson </a>
           </li>
-          <li>
-            <a className="linkFooter" href="#">Back to top</a>
-          </li>
         </ul>
       </nav>
     </div>

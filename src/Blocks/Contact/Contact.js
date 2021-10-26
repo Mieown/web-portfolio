@@ -1,7 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
-// import hellothere from '../../images/hellothere.jpg';
+// import gsap from "gsap";
+// import { useIntersection } from "react-use";
 
 export default function Contact() {
   function sendEmail(e) {
@@ -25,14 +26,49 @@ export default function Contact() {
     e.target.reset();
   }
 
+
+// const sectionRef = React.useRef(null);
+
+// const intersection = useIntersection(sectionRef, {
+//   root: null,
+//   rootMargin: "5000px",
+//   threshold: 1
+// });
+
+// //animation for fading in
+// const fadeInContact = element => {
+//   gsap.to(element, 10, {
+//     opacity: 1,
+//     y: -60,
+//     ease: "power4.out",
+//     stagger: {
+//       amount: .3
+//     }
+//   });
+// };
+
+// //animation for fading out
+// const fadeOutContact = element => {
+//   // gsap.to(element, 1, {
+//   //   opacity: 0,
+//   //   y: -20,
+//   //   ease: "power4.out",
+//   // });
+// };
+
+// //checking to see when viewport is visible to the user
+// intersection && intersection.intersectionRatio < 1
+// ? fadeOutContact(".fadeInContact")
+// : fadeInContact(".fadeInContact");
+
   return (
-    <div className="Contact">
+    <div className="Contact" id="contactLink">
 
       <div className="textcontainer-about">
         <h1 className="header-about">About</h1>
         <p className="text-about">
         
-        I’m a frontend developer and designer from Jämtland, in northern Sweden currently based in Stockholm. I'm in my second year of the Frontend program on Hyper Island. I have previously worked with graphic design and packaging development.
+        I’m a frontend developer and designer from Jämtland, in northern Sweden currently based in Stockholm. I'm in my second year of the Frontend developer program on Hyper Island. I have previously worked with graphic design and packaging development.
         <br />
         <br />
         I like problem solving and have a keen eye for details and beautiful designs. I am determination to always try to better myself with every project I work on. The main areas of my knowledge are HTML (5), CSS (3), JavaScript (native)
@@ -44,7 +80,6 @@ export default function Contact() {
 
         </p>
       </div>
-
 
       <div className="Form-text-container">
         <div className="Text-container-contact">
@@ -86,7 +121,7 @@ export default function Contact() {
                 <textarea
                   className="Form-control"
                   cols="30"
-                  rows="10"
+                  rows="11"
                   placeholder="Message"
                   name="message"
                 ></textarea>
@@ -100,9 +135,6 @@ export default function Contact() {
           </form>
         </div>
     </div>
-      {/* <div className="image-container-contact">
-        <img className="hello-image" src={hellothere}/>
-      </div> */}
     </div>
   );
 }

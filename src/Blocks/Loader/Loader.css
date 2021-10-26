@@ -1,0 +1,27 @@
+.WaveLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8d0fc;
+    min-height: 100vh;
+}
+
+.waveLoaderPath {
+    margin-top: -25vh;
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+
+    .waveLoaderPath {
+        margin-top: -22vh;
+        transform: scale(1.6, 1.6);
+    }
+  }
+  
+  @media screen and (min-width: 3000px) {
+    
+    .waveLoaderPath {
+        margin-top: -22vh;
+        transform: scale(1.6, 1.6);
+    }
+  }

@@ -12,41 +12,36 @@
 }
 
 .popup-bg {
-    /* height: 80%;
-    width: 51%; */
     height: 80vh;
     width: 51vw;
-    /* background-color: #fff4e6; */
     background-color: #f7f3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border-radius: 7px; */
 }
 
 .slider-container {
     margin-top: -3.4em;
-    margin-bottom: 1.1em;
+    margin-bottom: 1.25em;
 }
 
 .popup-text-container {
     display: flex;
     flex-direction: row;
-    /* width: 34.375em; */
     width: 43vw;
 }
 
 .popup-h2 {
-    margin-bottom: 0.35em;
-    font-size: 1.9vw;
-    font-family: 'MBF Taurian', serif;
+    margin-bottom: 0.33em;
+    font-size: 2vw;
+    font-family: 'mbf_taurianregular', serif;
     letter-spacing: 1.3px;
 }
 
 .popup-p {
-    margin-bottom: 1.8em;
+    margin-bottom: 1.7em;
     font-size: 1.2vw;
     line-height: 1.15;
     letter-spacing: 0.15px;
@@ -62,6 +57,12 @@
     border-radius: 50%;
     font-weight: bold;
     letter-spacing: 0.08em;
+    transition-duration: 0.4s;
+}
+
+.linktext-show:hover {
+    background-color: #f8d0fc;
+    border: #f8d0fc solid 0.25em;
 }
 
 .wavyarrow {
@@ -72,18 +73,157 @@
     bottom: 14vh;
 }
 
-
-
-
-@media screen and (min-width: 1600px) and (max-width: 1999px) {
-   
-  }
+@media screen and (min-width: 0px) and (max-width: 369px) {
   
-  @media screen and (min-width: 2000px) and (max-width: 2500px) {
-   
-  }
-  
-  @media screen and (min-width: 2501px) and (max-width: 2999px) {
+    .popup-bg {
+        height: 17.6em;
+        width: 17.6em;
+    }
+
+    .slider-container {
+        margin-top: -1.8em;
+        margin-bottom: 0.75em;
+    }
+
+    .popup-text-container {
+        width: 68vw;
+    }
+
+    .popup-h2 {
+        margin-bottom: 0.33em;
+        font-size: 3.4vw;
+    }
+    
+    .popup-p {
+        margin-bottom: 1.37em;
+        font-size: 2.4vw;
+        line-height: 1.18;
+    }
+
+    .linktext-show {
+        font-size: 1.5vw;
+    }
+
+    .wavyarrow {
+        width: 10%;
+        bottom: 30.2vh;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 390px) {
+
+    .popup-bg {
+        height: 18em;
+        width: 18em;
+    }
+
+    .slider-container {
+        margin-top: -2em;
+        margin-bottom: 0.75em;
+    }
+
+    .popup-text-container {
+        width: 68vw;
+    }
+
+    .popup-h2 {
+        margin-bottom: 0.33em;
+        font-size: 3.4vw;
+    }
+    
+    .popup-p {
+        margin-bottom: 1.37em;
+        font-size: 2.4vw;
+        line-height: 1.18;
+    }
+
+    .linktext-show {
+        font-size: 1.5vw;
+    }
+
+    .wavyarrow {
+        width: 10%;
+        bottom: 30.3vh;
+    }
+
+}
+
+@media screen and (min-width: 391px) and (max-width: 600px) {
+
+    .popup-bg {
+        height: 20em;
+        width: 20em;
+    }
+
+    .slider-container {
+        margin-top: -2em;
+        margin-bottom: 0.8em;
+    }
+
+    .popup-text-container {
+        width: 68vw;
+    }
+
+    .popup-h2 {
+        margin-bottom: 0.33em;
+        font-size: 3.4vw;
+    }
+    
+    .popup-p {
+        margin-bottom: 1.4em;
+        font-size: 2.4vw;
+        line-height: 1.18;
+    }
+
+    .linktext-show {
+        font-size: 1.5vw;
+    }
+
+    .wavyarrow {
+        width: 10%;
+        bottom: 29.8vh;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+    .popup-bg {
+        height: 37em;
+        width: 37em;
+    }
+
+    .slider-container {
+        margin-top: -5em;
+        margin-bottom: 1.45em;
+    }
+
+    .popup-text-container {
+        width: 69vw;
+    }
+
+    .popup-h2 {
+        margin-bottom: 0.33em;
+        font-size: 3.3vw;
+    }
+    
+    .popup-p {
+        margin-bottom: 2.2em;
+        font-size: 2.1vw;
+        line-height: 1.18;
+    }
+
+    .linktext-show {
+        font-size: 1.3vw;
+    }
+
+    .wavyarrow {
+        width: 9.5%;
+        bottom: 23.5vh;
+    }
+
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
     .slider-container {
         margin-top: -5em;
         margin-bottom: 1.3em;
@@ -92,9 +232,9 @@
     .popup-p {
         margin-bottom: 2.1em;
     }
-  }
+}
   
-  @media screen and (min-width: 3000px) {
+@media screen and (min-width: 3000px) {
     .wavyarrow {
         width: 5%;
     }
@@ -103,7 +243,7 @@
         position: absolute;
         left: 63vw;
         font-size: 0.7vw;
-  }
+    }
     .popup-p {
         margin-bottom: 1.6em;
     }

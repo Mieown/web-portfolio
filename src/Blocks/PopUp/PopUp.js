@@ -3,11 +3,16 @@ import './PopUp.css';
 import wavyarrow from '../../images/arrowpopupbrown.svg';
 import Slider from '../../Components/Slider/Slider';
 import info from '../../info';
+// import { gsap, Power3 } from 'gsap';
+
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 const PopUp = ({ pinfo, name, linktext, linkclasstext, link, isOpened, setIsOpened }) => {
 
   const exitPopup = () => {
     setIsOpened(false);
+    // ScrollTrigger.refresh(true);
   };
 
   return (

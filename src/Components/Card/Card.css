@@ -12,11 +12,15 @@
 
 .top {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 98.6%;
+    height: 98.7%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -28,44 +32,156 @@
   }
 
 .name {
-    font-family: 'MBF Taurian', serif;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    width: 90%;
-    transform: translate(-50%, -50%);
-    font-size: 1.45vw;
+    font-family: 'mbf_taurianregular', serif;
+    width: 80%;
+    margin-top: 10vh;
+    margin-bottom: 2.4vh;
+    font-size: 2.4vw;
     letter-spacing: 0.06em;
     color: #493011;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .cover-img {
-    width: 19em; 
-    height: 19em; 
+    width: 23.45vw; 
+    height: 41vh; 
     object-fit: cover; 
     object-position: 0% 50%;
 }
 
 .button-project {
-    position: absolute;
-    left: 50%;
-    top: 44%;
-    transform: translate(-50%, 50%);
     background: none;
     border: #493011 solid 0.25em;
     color: #493011;
     font-size: 0.8vw;
     padding: 1.8em 2em 1.8em 2em;
     border-radius: 50%;
-    /* font-weight: bold; */
     letter-spacing: 0.08em;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
+
+.button-project:hover {
+    background-color: #f8d0fc;
+    border: #f8d0fc solid 0.25em;
+  }
 
 .hiddencard {
     visibility: hidden;
+  }
+
+
+  @media screen and (min-width: 0px) and (max-width: 369px) {
+
+    .cover-img {
+        width: 9.3em; 
+        height: 9.3em; 
+        object-fit: cover; 
+        object-position: 0% 50%;
+    }
+
+    .top {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+          }
+
+    .name {
+        margin-top: 7vh;
+        font-size: 3.45vw;
+        margin-bottom: 1.4vh;
+        width: 70%;
+        line-height: 1.15;
+        }
+
+    .button-project {
+        background: none;
+        font-size: 1.6vw;
+        }
+  }
+
+
+  @media screen and (min-width: 370px) and (max-width: 390px) {
+
+    .cover-img {
+        width: 9.7em; 
+        height: 9.7em; 
+        object-fit: cover; 
+        object-position: 0% 50%;
+    }
+
+    .top {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+          }
+
+    .name {
+        margin-top: 7vh;
+        font-size: 3.45vw;
+        margin-bottom: 1.4vh;
+        width: 70%;
+        line-height: 1.15;
+        }
+
+    .button-project {
+        background: none;
+        font-size: 1.6vw;
+        }
+
+  }
+
+  @media screen and (min-width: 391px) and (max-width: 600px) {
+
+    .cover-img {
+        width: 10.9em; 
+        height: 10.9em; 
+        object-fit: cover; 
+        object-position: 0% 50%;
+    }
+
+    .top {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+          }
+
+    .name {
+        margin-top: 7.3vh;
+        font-size: 3.7vw;
+        margin-bottom: 1.4vh;
+        width: 70%;
+        line-height: 1.15;
+        }
+
+    .button-project {
+        background: none;
+        font-size: 1.7vw;
+        }
+
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+
+    .cover-img {
+        width: 10em; 
+        height: 10em; 
+        object-fit: cover; 
+        object-position: 0% 50%;
+    }
+
+    .top {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+          }
+
+    .name {
+        margin-top: 4.4vh;
+        font-size: 2.05vw;
+        margin-bottom: 1vh;
+        width: 75%;
+        }
+
+    .button-project {
+        background: none;
+        font-size: 0.85vw;
+        }
+
   }

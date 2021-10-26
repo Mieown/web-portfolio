@@ -1,11 +1,22 @@
+@font-face {
+  font-family: 'mbf_taurianregular';
+  src: url('./Assets/mbf_taurian-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
-  font-family: 'MBF Taurian', serif;
+  font-family: 'mbf_taurianregular', serif;
 }
 
 h2 {

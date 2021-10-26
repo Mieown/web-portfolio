@@ -1,16 +1,17 @@
 import React from 'react';
 import './Card.css';
 
-function Card({ img, name, classtext, isOpened, setIsOpened, index }) {
-  // function handleClick() {
-  //   setIsOpened();
-  // }
+// import { gsap, Power3 } from 'gsap';
 
-  // använd arrow functions istället! och var specifik i namngivningen
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
+
+function Card({ img, name, classtext, isOpened, setIsOpened, index }) {
 
   const onViewProject = (card) => {
     setIsOpened(card);
     console.log(isOpened);
+    // ScrollTrigger.refresh(true);
   };
 
   return (

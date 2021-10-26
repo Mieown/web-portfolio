@@ -1,9 +1,9 @@
 .Footer ul {
-    background: #f8d0fc;
+    background: #f7f3f3;
     display: flex;
-    justify-content: space-between;
-    padding-top: 2.1em;
-    padding-bottom: 4.5em;
+    justify-content: center;
+    padding-top: 2.5em;
+    padding-bottom: 5em;
     padding-right: 6vw;
     padding-left: 6vw;
     list-style-type: none;
@@ -20,4 +20,56 @@
 .linkFooter {
     text-decoration: none;
     color: #493011;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 0px) and (max-width: 369px) {
+
+    .Footer ul {
+        padding-top: 1em;
+        padding-bottom: 6.5em;
+      }
+
+      .Footer-links {
+        font-size: 2.6vw;
+    }
+  
+  }
+  
+  @media screen and (min-width: 370px) and (max-width: 390px) {
+  
+    .Footer ul {
+        padding-top: 1em;
+        padding-bottom: 6.5em;
+      }
+
+      .Footer-links {
+        font-size: 2.6vw;
+    }
+
+  }
+  
+  @media screen and (min-width: 391px) and (max-width: 600px) {
+  
+    .Footer ul {
+        padding-top: 1em;
+        padding-bottom: 6.5em;
+      }
+
+      .Footer-links {
+        font-size: 2.6vw;
+    }
+
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+   
+    .Footer ul {
+        padding-top: 0.4em;
+        padding-bottom: 5.5em;
+      }
+
+      .Footer-links {
+        font-size: 2.6vw;
+    }
 }

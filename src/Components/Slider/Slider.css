@@ -1,7 +1,5 @@
 
     .rsis-container {
-        /* object-fit: cover; 
-        object-position: 50% 50%; */
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
