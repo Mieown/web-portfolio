@@ -3,16 +3,11 @@ import './PopUp.css';
 import wavyarrow from '../../images/arrowpopupbrown.svg';
 import Slider from '../../Components/Slider/Slider';
 import info from '../../info';
-// import { gsap, Power3 } from 'gsap';
-
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// gsap.registerPlugin(ScrollTrigger);
 
 const PopUp = ({ pinfo, name, linktext, linkclasstext, link, isOpened, setIsOpened }) => {
 
   const exitPopup = () => {
     setIsOpened(false);
-    // ScrollTrigger.refresh(true);
   };
 
   return (
@@ -32,6 +27,7 @@ const PopUp = ({ pinfo, name, linktext, linkclasstext, link, isOpened, setIsOpen
             <div className="left-popup-text">
               <h2 className="popup-h2">{name}</h2>
               <p className="popup-p">{pinfo}</p>
+              <img className="wavyarrow" src={wavyarrow} onClick={exitPopup}/>
               <a
                 className={linkclasstext}
                 href={link}
@@ -39,7 +35,6 @@ const PopUp = ({ pinfo, name, linktext, linkclasstext, link, isOpened, setIsOpen
                 rel="noopener"
                 >{linktext}
               </a>
-              <img className="wavyarrow" src={wavyarrow} onClick={exitPopup}/>
             </div>
         </div>
         </div>

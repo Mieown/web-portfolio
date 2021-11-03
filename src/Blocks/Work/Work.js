@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Work.css';
 import info from '../../info';
 import Card from '../../Components/Card/Card';
 
 function Work({ isOpened, setIsOpened }) {
   return (
-    <div className="Work" id="workLink">
-      <div className="Text-container-work">
-        <h1 className="Work-header">My Work</h1>
-        <p className="Work-textinfo">
-          Here is a collection of projects created by me or together with classmates and co-workers. Read more about each project and how they have been created.
+    <div className="work" id="workLink">
+      <div className="text-container-work">
+        <h1 className="work-header">My Work</h1>
+        <p className="work-textinfo">
+          Here is a collection of projects created by me or together with classmates and co-workers. Web based projects and projects made in print. Read more about each project and how they have been created. Feel free to test them out.
         </p>
       </div>
-      <div className="Cards-container">
+      <div className="cards-container">
         {info.map((item, index) => (
           <Card
             index={index}
@@ -33,10 +33,15 @@ function Work({ isOpened, setIsOpened }) {
           />
         ))}
       </div>
+      <hr 
+          style={{
+            color: 'blueviolet',
+            backgroundColor: '#493011',
+            height: 1,
+            border: 'none',
+        }}/>
     </div>
   );
 }
 
 export default Work;
-
-// A small gallery of recent projects chosen by me. I've done them by myself or together with some classmates. Click into them to see more.</p>

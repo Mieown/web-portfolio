@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Loader.css';
-import WaveLoading from '../../Components/WaveLoading/WaveLoading';
 
 function Loader() {
 
   return (
-    <div className="WaveLoader">
-        <div className="waveLoaderPath">
-          <WaveLoading />
-        </div>
+    <div className="heartLoader">
+      <div className="lds-heart">
+      <div></div></div>
     </div>
   );
 }

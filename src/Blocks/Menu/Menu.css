@@ -1,19 +1,37 @@
+
+.name-menu-container {
+  position: fixed;
+  z-index: 12;
+}
+
+.linkNamePortfolio {
+  position: absolute;
+  margin-top: 1.21vw;
+  margin-left: 9.5vw;
+  width: 14vw;
+  text-decoration: none;
+  color: #493011;
+  font-family: 'Agatho', serif;
+  font-size: 1.63vw;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
 .Menu-links {
   margin-top: 0em;
 }
 
 .Menu-links ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   list-style-type: none;
   font-family: 'Karla', sans-serif;
   font-size: 0.95vw;
-  padding-top: 1.11em;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   z-index: 10;
-  right: 3.1vw;
+  right: 4.5vw;
   left: 3.1vw;
 }
 
@@ -21,13 +39,48 @@ li {
   display: inline;
 }
 
+.linkAbout,
+.linkWork,
+.linkContact {
+  border-left: #493011 solid 1px;
+  padding: 1.64vw 1.72vw 1.64vw 1.72vw;
+}
+
+.linkContact {
+  border-top: #493011 solid 1px;
+  background: linear-gradient(to right, rgb(240, 240, 240) 50%, rgb(255, 217, 235) 50%);
+  background-position: right top;
+  background-size: 250% 100%;
+  transition: all .4s ease-out;
+}
+
+.linkContact:hover {
+  background-position: left top;
+}
+
 .linkMenu {
   text-decoration: none;
   color: #493011;
-  font-weight: 900;
+  font-weight: lighter;
   letter-spacing: 0.08em;
 }
 
+.linkWork,
+.linkAbout {
+  background: linear-gradient(to right, rgb(240, 240, 240) 50%, white 50%);
+  border-top: #493011 solid 1px;
+  background-position: right top;
+  background-size: 250% 100%;
+  transition: all .4s ease-out;
+}
+
+.linkAbout:hover {
+  background-position: left top;
+}
+
+.linkWork:hover {
+  background-position: left top;
+}
 
 .Menu-links-bottom ul {
   display: flex;
@@ -38,10 +91,10 @@ li {
   padding-top: 1.05em;
   overflow: hidden;
   position: fixed;
-  bottom: 1.25em;
+  bottom: 2.14em;
   float: left;
   z-index: 10;
-  right: 3.1vw;
+  right: 6.5vw;
   left: 3.1vw;
 }
 
@@ -49,114 +102,265 @@ li {
   color: #493011;
   font-weight: 600;
   letter-spacing: 0.08em;
-  padding-left: 2.5em;
-}
-
-.logo-menu-container {
-  position: fixed;
-  display: flex;
-  height: 100%;
-  z-index: 10;
-}
-
-.linkMenuLogo {
-  display: flex;
-}
-
-.m-logo {
-  width: 3.2vw;
-  margin-top: -1.5vw;
-  margin-left: 1.58vw;
-  overflow: hidden;
+  padding-left: 2.6em;
 }
 
 @media screen and (min-width: 0px) and (max-width: 369px) {
   
-  .m-logo {
-    width: 7.5vw;
-    margin-left: 4.861vw;
+  .Menu-links {
+    margin-bottom: none;
+  }
+  
+  .Menu-links ul {
+    display: flex;
+    justify-content: center;
+    bottom: 0em;
+    top: none;
+    font-size: 1.68vw;
   }
 
-  .Menu-links ul {
-    font-size: 2.4vw;
-    padding-top: 1.3em;
-    right: 8.4vw;
-    left: 8.4vw;
+  .linkAbout,
+  .linkWork,
+  .linkContact {
+    border-left: #493011 solid 1px;
+    border-bottom: #493011 solid 1px;
+    padding: 4.2vw 10.4vw 4.2vw 10.4vw;
+  }
+
+  .name-menu-container {
+    position: fixed;
+    z-index: 12;
+  }
+
+  .linkNamePortfolio {
+    position: none;
+    margin-top: 3.475vw;
+    margin-left: 39vw;
+    margin-right: 39vw;
+    width: 26vw;
+    text-decoration: none;
+    color: #493011;
+    font-family: 'Agatho', serif;
+    font-size: 3.3vw;
+    letter-spacing: 0.08em;
+    font-weight: 400;
   }
 
   .Menu-links-bottom ul {
-    font-size: 2vw;
-    bottom: 1.6em;
-    right: 8.4vw;
-    left: 3.1vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7vw;
+    transform: rotate(-90deg);
+    padding-top: 1.05em;
+    position: fixed;
+    bottom: -29.8vh;
+    z-index: 13;
+    margin-right: -89.9vw;
   }
+  
+  .linkMenuBottom {
+    color: #493011;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-left: 3.4em;
+
+}
 
 }
 
 @media screen and (min-width: 370px) and (max-width: 390px) {
 
-  .m-logo {
-    width: 7.5vw;
-    margin-left: 4.86vw;
+  .Menu-links {
+    margin-bottom: none;
+  }
+  
+  .Menu-links ul {
+    display: flex;
+    justify-content: center;
+    bottom: 0em;
+    top: none;
+    font-size: 1.8vw;
   }
 
-  .Menu-links ul {
-    font-size: 2.4vw;
-    padding-top: 1.3em;
-    right: 8.4vw;
-    left: 8.4vw;
+  .linkAbout,
+  .linkWork,
+  .linkContact {
+    border-left: #493011 solid 1px;
+    border-bottom: #493011 solid 1px;
+    padding: 4.1vw 10.2vw 4.1vw 10.2vw;
+  }
+
+  .name-menu-container {
+    position: fixed;
+    z-index: 12;
+  }
+
+  .linkNamePortfolio {
+    position: none;
+    margin-top: 3.59vw;
+    margin-left: 39vw;
+    margin-right: 39vw;
+    width: 26vw;
+    text-decoration: none;
+    color: #493011;
+    font-family: 'Agatho', serif;
+    font-size: 3.2vw;
+    letter-spacing: 0.08em;
+    font-weight: 400;
   }
 
   .Menu-links-bottom ul {
-    font-size: 2vw;
-    bottom: 1.6em;
-    right: 8.4vw;
-    left: 3.1vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6vw;
+    transform: rotate(-90deg);
+    padding-top: 1.05em;
+    position: fixed;
+    bottom: -29.8vh;
+    z-index: 13;
+    margin-right: -89.9vw;
   }
+  
+  .linkMenuBottom {
+    color: #493011;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-left: 3.4em;
+
+}
 
 }
 
 @media screen and (min-width: 391px) and (max-width: 600px) {
 
-  .m-logo {
-    width: 7.5vw;
-    margin-left: 4.7vw;
+  .Menu-links {
+    margin-bottom: none;
+  }
+  
+  .Menu-links ul {
+    display: flex;
+    justify-content: center;
+    bottom: 0em;
+    top: none;
+    font-size: 1.68vw;
   }
 
-  .Menu-links ul {
-    font-size: 2.4vw;
-    padding-top: 1.3em;
-    right: 8.4vw;
-    left: 8.4vw;
+  .linkAbout,
+  .linkWork,
+  .linkContact {
+    border-left: #493011 solid 1px;
+    border-bottom: #493011 solid 1px;
+    padding: 4.3vw 10.4vw 4.3vw 10.4vw;
+  }
+
+  .name-menu-container {
+    position: fixed;
+    z-index: 12;
+  }
+
+  .linkNamePortfolio {
+    position: none;
+    margin-top: 3.5vw;
+    margin-left: 38.5vw;
+    margin-right: 38.5vw;
+    width: 26vw;
+    text-decoration: none;
+    color: #493011;
+    font-family: 'Agatho', serif;
+    font-size: 3.3vw;
+    letter-spacing: 0.08em;
+    font-weight: 400;
   }
 
   .Menu-links-bottom ul {
-    font-size: 2vw;
-    bottom: 1.6em;
-    right: 8.4vw;
-    left: 3.1vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6vw;
+    transform: rotate(-90deg);
+    padding-top: 1.05em;
+    position: fixed;
+    bottom: -29.8vh;
+    z-index: 13;
+    margin-right: -89.9vw;
   }
+  
+  .linkMenuBottom {
+    color: #493011;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-left: 3.4em;
+
+}
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
 
-  .m-logo {
-    width: 7vw;
-    margin-left: 5vw;
+  .Menu-links {
+    margin-bottom: none;
+  }
+  
+  .Menu-links ul {
+    display: flex;
+    justify-content: center;
+    bottom: 0em;
+    top: none;
+    font-size: 1.68vw;
   }
 
-  .Menu-links ul {
-    font-size: 1.7vw;
-    padding-top: 1.98em;
-    right: 8.4vw;
-    left: 8.4vw;
+  .linkAbout,
+  .linkWork,
+  .linkContact {
+    border-left: #493011 solid 1px;
+    border-bottom: #493011 solid 1px;
+    padding: 4.35vw 10.4vw 4.35vw 10.4vw;
+  }
+
+  .name-menu-container {
+    position: fixed;
+    z-index: 12;
+  }
+
+  .linkNamePortfolio {
+    position: none;
+    margin-top: 3.575vw;
+    margin-left: 39vw;
+    margin-right: 39vw;
+    width: 26vw;
+    text-decoration: none;
+    color: #493011;
+    font-family: 'Agatho', serif;
+    font-size: 3vw;
+    letter-spacing: 0.08em;
+    font-weight: 400;
   }
 
   .Menu-links-bottom ul {
-    font-size: 1.5vw;
-    bottom: 2.4em;
-    right: 8.5vw;
-    left: 3.1vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7vw;
+    transform: rotate(-90deg);
+    padding-top: 1.05em;
+    position: fixed;
+    bottom: -41vh;
+    z-index: 13;
+    margin-right: -89.8vw;
   }
+  
+  .linkMenuBottom {
+    color: #493011;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-left: 3em;
+
+}
 
 }

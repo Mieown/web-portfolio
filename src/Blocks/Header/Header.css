@@ -1,9 +1,9 @@
-.Header {
-  background: #f8d0fc;
+.header {
+  background: #ffffff;
   min-height: 100vh;
 }
 
-.Main-frame {
+.main-frame {
   position: fixed;
   background: #ffffff;
   z-index: 9;
@@ -13,69 +13,132 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 3.1vw;
+  height: 4.5vw;
+  border: #493011 solid 1px;
+  z-index: 9;
+
 }
 
 .frame-right {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 3.1vw;
+  width: 4.5vw;
+  border: #493011 solid 1px;
+  z-index: 10;
 }
 
 .frame-bottom {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3.1vw;
+  height: 4.5vw;
+  border: #493011 solid 1px;
+  z-index: 9;
 }
 
 .frame-left {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 3.1vw;
+  width: 4.5vw;
+  border: #493011 solid 1px;
+  z-index: 10;
 }
 
-.Text-container-start {
+.box-left-top {
+  position: fixed;
+  z-index: 11;
+  height: 4.5vw;
+  width: 4.5vw;
+  border-bottom: #493011 solid 1px;
+}
+
+.box-right-top {
+  position: fixed;
+  right: 0;
+  z-index: 11;
+  height: 4.5vw;
+  width: 4.5vw;
+  border-bottom: #493011 solid 1px;
+}
+
+.box-left-bottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  height: 4.5vw;
+  width: 4.5vw;
+  border-top: #493011 solid 1px;
+}
+
+.box-right-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  height: 4.5vw;
+  width: 4.5vw;
+  border-top: #493011 solid 1px;
+}
+
+.text-container-start {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   color: #493011;
-  padding-top: 32.5vh;
+  padding-top: 24.5vh;
+  margin-left: 9.4vw;
 }
 
-.Header-header {
-  font-size: 6.1vw;
-  margin-bottom: 0.20em;
-  letter-spacing: 1.1px;
+.header-header {
+  font-size: 7.5vw;
+  margin-bottom: 0.18em;
+  letter-spacing: 1.4px;
+  line-height: 1.1;
+  font-weight: lighter;
 }
 
-.Header-textinfo {
-  font-size: 1.55vw;
-  letter-spacing: 1px;
-  font-family: 'Karla', sans-serif;
+#picture-me {
+  color: #493011;
+  display: inline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.01em;
+  text-underline-offset: 0.07em;
+  cursor: pointer;
 }
 
-.Wave-animation-container {
-  margin-top: -9.7em;
-  margin-bottom: 0.9em;
+.scrollHeader {
+  height: 1.2em;
+  font-size: 7.5vw;
+  line-height: 1.1em;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1vh;
 }
 
-.Header-p-text {
-  font-size: 1.02vw;
-  letter-spacing: 1.07px;
-  font-weight: 900;
-  margin-bottom: 4.45em;
-  border: #493011 solid 0.26em;
-  border-radius: 50%;
-  padding: 1.1em 1.5em 1.1em 1.5em;
-} 
+.scrollHeader > span {
+  position: absolute;
+  top: 0;
+  animation: slide 11s infinite;
+  font-weight: lighter;
+  width: 250em;
+}
 
-.startarrow {
-  width: 1.4%;
-  animation: MoveUpDown 1s linear infinite;
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
 }
 
 @keyframes MoveUpDown {
@@ -87,55 +150,170 @@
   }
 }
 
+.p-container {
+  position: absolute;
+  border: #493011 solid 0.12em;
+  border-radius: 50%;
+  width: 8vw;
+  height: 4.95vw;
+  margin-left: 84.6vw;
+  margin-top: 6.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkScroll {
+  text-decoration: none;
+  color: #493011;
+}
+
+.hoverScroll {
+  height: 1.2em;
+  line-height: 1.2em;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.95vw;
+  letter-spacing: 0.01em;
+  position: relative;
+  overflow: hidden;
+  width: 5.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-weight: 200;
+}
+
+.hoverScroll:hover > span {
+  position: absolute;
+  top: 0;
+  animation: slidetwo 4s;
+  font-weight: lighter;
+}
+
+@keyframes slidetwo {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+#heart-logo {
+  margin-left: 0.8vw;
+}
+
 
 
 @media screen and (min-width: 0px) and (max-width: 369px) {
   
   .frame-top {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-right {
-    width: 8.5vw;
+    width: 11vw;
   }
   
   .frame-bottom {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-left {
-    width: 8.5vw;
+    width: 11vw;
   }
 
-  .Header-header {
-    font-size: 20vw;
-    margin-bottom: 0.09em;
-    line-height: 1.15em;
+  .box-left-top {
+    height: 11vw;
+    width: 11vw;
   }
   
-  .Header-textinfo {
-    font-size: 4.5vw;
+  .box-right-top {
+    height: 11vw;
+    width: 11vw;
+    }
+  
+  .box-left-bottom {
+    height: 11vw;
+    width: 11vw;
+  }
+  
+  .box-right-bottom {
+    height: 11vw;
+    width: 11vw;
   }
 
-  .Text-container-start {
-    padding-top: 28vh;
-    margin-right: 20vw;
-    margin-left: 20vw;
+  .text-container-start {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #493011;
+    padding-top: 24.5vh;
+    margin-left: 17vw;
+    margin-right: 11vw;
+  }
+  
+  .header-header {
+    font-size: 15vw;
+    margin-bottom: 0.18em;
+    letter-spacing: 1.4px;
+    line-height: 1.1;
+    font-weight: lighter;
+  }
+  
+  .scrollHeader {
+    height: 1.2em;
+    margin-top: 2vh;
+    font-size: 7vw;
+    line-height: 1.1em;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scrollHeader > span {
+    position: absolute;
+    top: 0;
+    animation: slide 11s infinite;
+    font-weight: lighter;
+    width: 250em;
   }
 
-  .Wave-animation-container {
-    margin-top: -10.35em;
-    margin-bottom: 0.25em;
+  .p-container {
+    border: #493011 solid 0.12em;
+    border-radius: 50%;
+    width: 17.7vw;
+    height: 10.1vw;
+    margin-left: 16.5vw;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .Header-p-text {
-    font-size: 2.8vw;
-    margin-bottom: 3.65em;
-    border: #493011 solid 0.22em;
-  } 
-
-  .startarrow {
-    width: 6%;
+  
+  .linkScroll {
+    text-decoration: none;
+    color: #493011;
+  }
+  
+  .hoverScroll {
+    height: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: 200;
   }
 
 }
@@ -144,50 +322,107 @@
 @media screen and (min-width: 370px) and (max-width: 390px) {
 
   .frame-top {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-right {
-    width: 8.5vw;
+    width: 11vw;
   }
   
   .frame-bottom {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-left {
-    width: 8.5vw;
+    width: 11vw;
   }
 
-  .Header-header {
-    font-size: 20vw;
-    margin-bottom: 0.09em;
-    line-height: 1.15em;
+  .box-left-top {
+    height: 11vw;
+    width: 11vw;
   }
   
-  .Header-textinfo {
-    font-size: 4.5vw;
+  .box-right-top {
+    height: 11vw;
+    width: 11vw;
+    }
+  
+  .box-left-bottom {
+    height: 11vw;
+    width: 11vw;
+  }
+  
+  .box-right-bottom {
+    height: 11vw;
+    width: 11vw;
   }
 
-  .Text-container-start {
-    padding-top: 28vh;
-    margin-right: 20vw;
-    margin-left: 20vw;
+  .text-container-start {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #493011;
+    padding-top: 24.5vh;
+    margin-left: 17vw;
+    margin-right: 11vw;
+  }
+  
+  .header-header {
+    font-size: 15vw;
+    margin-bottom: 0.18em;
+    letter-spacing: 1.4px;
+    line-height: 1.1;
+    font-weight: lighter;
+  }
+  
+  .scrollHeader {
+    height: 1.2em;
+    margin-top: 2vh;
+    font-size: 7vw;
+    line-height: 1.1em;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scrollHeader > span {
+    position: absolute;
+    top: 0;
+    animation: slide 11s infinite;
+    font-weight: lighter;
+    width: 250em;
   }
 
-  .Wave-animation-container {
-    margin-top: -10.35em;
-    margin-bottom: 0.25em;
+  .p-container {
+    border: #493011 solid 0.12em;
+    border-radius: 50%;
+    width: 17.7vw;
+    height: 10.1vw;
+    margin-left: 16.5vw;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .Header-p-text {
-    font-size: 2.8vw;
-    margin-bottom: 3.65em;
-    border: #493011 solid 0.22em;
-  } 
-
-  .startarrow {
-    width: 6%;
+  
+  .linkScroll {
+    text-decoration: none;
+    color: #493011;
+  }
+  
+  .hoverScroll {
+    height: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: 200;
   }
 
 }
@@ -195,50 +430,107 @@
 @media screen and (min-width: 391px) and (max-width: 600px) {
 
   .frame-top {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-right {
-    width: 8.5vw;
+    width: 11vw;
   }
   
   .frame-bottom {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-left {
-    width: 8.5vw;
+    width: 11vw;
   }
 
-  .Header-header {
-    font-size: 20vw;
-    margin-bottom: 0.09em;
-    line-height: 1.15em;
+  .box-left-top {
+    height: 11vw;
+    width: 11vw;
   }
   
-  .Header-textinfo {
-    font-size: 4.5vw;
+  .box-right-top {
+    height: 11vw;
+    width: 11vw;
+    }
+  
+  .box-left-bottom {
+    height: 11vw;
+    width: 11vw;
+  }
+  
+  .box-right-bottom {
+    height: 11vw;
+    width: 11vw;
   }
 
-  .Text-container-start {
-    padding-top: 28vh;
-    margin-right: 20vw;
-    margin-left: 20vw;
+  .text-container-start {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #493011;
+    padding-top: 24.5vh;
+    margin-left: 17vw;
+    margin-right: 11vw;
+  }
+  
+  .header-header {
+    font-size: 15vw;
+    margin-bottom: 0.18em;
+    letter-spacing: 1.4px;
+    line-height: 1.1;
+    font-weight: lighter;
+  }
+  
+  .scrollHeader {
+    height: 1.2em;
+    margin-top: 2vh;
+    font-size: 7vw;
+    line-height: 1.1em;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scrollHeader > span {
+    position: absolute;
+    top: 0;
+    animation: slide 11s infinite;
+    font-weight: lighter;
+    width: 250em;
   }
 
-  .Wave-animation-container {
-    margin-top: -10.35em;
-    margin-bottom: 0.25em;
+  .p-container {
+    border: #493011 solid 0.12em;
+    border-radius: 50%;
+    width: 17.7vw;
+    height: 10.1vw;
+    margin-left: 16.5vw;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .Header-p-text {
-    font-size: 2.8vw;
-    margin-bottom: 3.65em;
-    border: #493011 solid 0.22em;
-  } 
-
-  .startarrow {
-    width: 6%;
+  
+  .linkScroll {
+    text-decoration: none;
+    color: #493011;
+  }
+  
+  .hoverScroll {
+    height: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: 200;
   }
 
 }
@@ -246,93 +538,130 @@
 @media screen and (min-width: 601px) and (max-width: 1000px) {
 
   .frame-top {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-right {
-    width: 8.5vw;
+    width: 11vw;
   }
   
   .frame-bottom {
-    height: 8.5vw;
+    height: 11vw;
   }
   
   .frame-left {
-    width: 8.5vw;
+    width: 11vw;
   }
 
-  .Header-header {
-    font-size: 10vw;
-    margin-bottom: 0.3em;
-  }
-  
-  .Header-textinfo {
-    font-size: 3.4vw;
-  }
-
-  .Text-container-start {
-    padding-top: 36.5vh;
-    margin-right: 15vw;
-    margin-left: 15vw;
-  }
-
-  .Wave-animation-container {
-    margin-top: -9em;
-    margin-bottom: 1.3em;
-  }
-
-  .Header-p-text {
-    font-size: 2.1vw;
-    margin-bottom: 8.5em;
-    border: #493011 solid 0.22em;
-  } 
-
-  .startarrow {
-    width: 4.6%;
-  }
-
-}
-
-@media screen and (min-width: 2501px) and (max-width: 2999px) {
-  
-  .Wave-animation-container {
-    margin-top: -10.5em;
-    margin-bottom: 6.1em;
-    transform: scale(1.6, 1.6);
+  .box-left-top {
+    height: 11vw;
+    width: 11vw;
   }
   
-  .Header-p-text {
-    margin-bottom: 4.55em;
-  } 
+  .box-right-top {
+    height: 11vw;
+    width: 11vw;
+    }
+  
+  .box-left-bottom {
+    height: 11vw;
+    width: 11vw;
+  }
+  
+  .box-right-bottom {
+    height: 11vw;
+    width: 11vw;
+  }
+
+  .text-container-start {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #493011;
+    padding-top: 24.5vh;
+    margin-left: 17vw;
+    margin-right: 11vw;
+  }
+  
+  .header-header {
+    font-size: 11vw;
+    margin-bottom: 0.18em;
+    letter-spacing: 1.4px;
+    line-height: 1.1;
+    font-weight: lighter;
+  }
+  
+  .scrollHeader {
+    height: 1.2em;
+    margin-top: 2vh;
+    font-size: 7.5vw;
+    line-height: 1.1em;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scrollHeader > span {
+    position: absolute;
+    top: 0;
+    animation: slide 11s infinite;
+    font-weight: lighter;
+    width: 250em;
+  }
+
+  .p-container {
+    border: #493011 solid 0.12em;
+    border-radius: 50%;
+    width: 17.7vw;
+    height: 10.1vw;
+    margin-left: 17vw;
+    margin-top: 8.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .linkScroll {
+    text-decoration: none;
+    color: #493011;
+  }
+  
+  .hoverScroll {
+    height: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: 200;
+  }
+
 }
 
 @media screen and (min-width: 3000px) {
   
-  .Text-container-start {
-    padding-top: 29.5vh;
+  .text-container-start {
+    padding-top: 22vh;
+  }
+  
+  .header-header {
+    font-size: 6.7vw;
+    margin-bottom: 0.18em;
+    line-height: 1.09;
+  }
+  
+  .scrollHeader {
+    height: 1.2em;
+    font-size: 6.7vw;
+    line-height: 1.15em;
   }
 
-  .Header-header {
-    margin-bottom: 0.07em;
-  }
-
-  .Wave-animation-container {
-    margin-top: -12.5em;
-    margin-bottom: 8.5em;
-    transform: scale(2, 2);
-  }
-
-  .Header-p-text {
-    font-size: 1.02vw;
-    letter-spacing: 1.07px;
-    font-weight: 900;
-    margin-bottom: 2em;
-    border: #493011 solid 0.24em;
-    border-radius: 50%;
-    padding: 1em 1.4em 1em 1.4em;
-  } 
-
-  .startarrow {
-    width: 1.1%;
+  .p-container {
+    margin-top: -5.5vh;
   }
 }

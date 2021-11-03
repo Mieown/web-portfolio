@@ -5,8 +5,8 @@ import './Slider.css';
 
 const Slider = ({ img1, img2, img3, img4 }) => {
 
-  const [isWidth, setIsWidth] = useState(43 + 'vw');
-  const [isHeight, setIsHeight] = useState(42.9 + 'vh');
+  const [isWidth, setIsWidth] = useState(41 + 'vw');
+  const [isHeight, setIsHeight] = useState(41 + 'vh');
 
   const images = [
     { url: img1 },
@@ -25,15 +25,16 @@ const Slider = ({ img1, img2, img3, img4 }) => {
     }   else if (window.innerWidth < 800) {
       setIsWidth(69 + 'vw');
       setIsHeight(29 + 'vh'); 
-    } else {
-      setIsWidth(43 + 'vw');
-      setIsHeight(42.9 + 'vh'); 
+    }   else if (window.innerWidth > 3000) {
+      setIsWidth(41 + 'vw');
+      setIsHeight(32 + 'vh'); 
+    }   else {
+      setIsWidth(41 + 'vw');
+      setIsHeight(41 + 'vh'); 
   }
 
 });
 
-//   return () => clearInterval(intervalId);
-// }, [isActive])
 
   return (
     <div>

@@ -25,83 +25,65 @@ useEffect(() => {
   }, 3000)
 }, [])
 
-let t1 = new gsap.timeline({ delay: 0.3 });
+let t1 = new gsap.timeline({ delay: 0.4 });
 useEffect(() => {
 
   if (isOpened == false){
 
   t1.staggerFrom(
-    '.Header-header',
+    '.header-header',
     1,
     { y: 30, ease: Power3.easeOut, opacity: 0 },
     0.15,
     'Start'
   )
     .from(
-      '.Header-textinfo',
+      '.p-container',
       1,
       { y: 30, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
       0.35
-    )
-    .from(
-      '.Wave-animation-container',
-      1,
-      { y: 30, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-      0.80
-    )
-    .from(
-      '.Header-p-text',
-      1,
-      { y: 30, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-      1.3
-    )
-    .from(
-      '.startarrow',
-      1,
-      { y: 30, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-      2
     );
   
   let t2 = new gsap.timeline({ 
   scrollTrigger: {
-  trigger: '.Work-header',
+  trigger: '.work-header',
   // markers: true,
   start: 'top 90%',
   end: 'bottom 60%',
   }
 });
 
-    t2.from(".Work-header", {
+    t2.from(".work-header", {
       duration: 1,
       y: '100',
       opacity: 0,
       ease: "power3.out"
     })
-    .from(".Work-textinfo", {
+    .from(".work-textinfo", {
       duration: 1,
       y: '100',
       opacity: 0,
       ease: "power3.out"
     })
-    .from('.header-about, .Contact-header', {
+    .from('.header-about, .contact-header', {
         duration: 1,
         y: '100',
         opacity: 0,
         ease: "power3.out"
       })
-    .from('.text-about, .Contact-textinfo', {
+    .from('.text-about, .contact-textinfo', {
       duration: 1,
       y: '100',
       opacity: 0,
       ease: "power3.out"
     })
-    .from(".Contact-form", {
+    .from(".contact-form", {
       duration: 1,
       y: '100',
       opacity: 0,
       ease: "power3.out"
     })
-    .from(".Btn-submit", {
+    .from(".btn-submit", {
       duration: 1,
       y: '100',
       opacity: 0,
@@ -122,70 +104,8 @@ useEffect(() => {
   }  else{
       ScrollTrigger.refresh();
   }
-  
-
-// let t3 = new gsap.timeline({ 
-//   scrollTrigger: {
-//     trigger: '.header-about',
-//     markers: true,
-//     start: 'top 90%',
-//     end: 'bottom 60%',
-//     toggleActions: 'restart complete reverse reset'
-//   }
-// });
-
-// t3.from('.header-about, .Contact-header', {
-//   duration: 1,
-//   y: '100',
-//   opacity: 0,
-//   ease: "power3.out"
-// })
-//   .from('.text-about, .Contact-textinfo', {
-//     duration: 1,
-//     y: '100',
-//     opacity: 0,
-//     ease: "power3.out"
-//   })
-//   .from(".Contact-form", {
-//     duration: 1,
-//     y: '100',
-//     opacity: 0,
-//     ease: "power3.out"
-//   })
-//   .from(".Btn-submit", {
-//     duration: 1,
-//     y: '100',
-//     opacity: 0,
-//     ease: "power3.out"
-//   });
-
-// let t4 = new gsap.timeline({ 
-//   scrollTrigger: {
-//     trigger: '.marquee--inner',
-//     markers: true,
-//     start: 'top 90%',
-//     end: 'bottom 60%',
-//   }
-// });
-
-// t4.from('.marquee--inner', {
-//   duration: 1,
-//   y: '100',
-//   opacity: 0,
-//   ease: "power3.out"
-// })
-//   .from('.linkFooter', {
-//     duration: 1,
-//     y: '100',
-//     opacity: 0,
-//     ease: "power3.out"
-//   });
-// }   else{
-//   ScrollTrigger.update();
-// }
 
 });
-
 
   return (
     <div className="App">

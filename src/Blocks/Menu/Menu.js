@@ -1,6 +1,5 @@
 import React from 'react';
 import './Menu.css';
-import mlogo from '../../images/m-logo.svg';
 
 
 function Menu() {
@@ -8,20 +7,20 @@ function Menu() {
     <div className="Menu">
       <nav className="Menu-links">
         <ul>
-          <li>
+          <li className="linkAbout">
             <a className="linkMenu" href="#contactLink">About</a>
           </li>
-          <li>
+          <li className="linkWork">
             <a className="linkMenu" href="#workLink">Work</a>
           </li>
-          <li>
+          <li className="linkContact">
             <a className="linkMenu" href="#contactLink">Contact</a>
           </li>
         </ul>
       </nav>
 
-      <div className="logo-menu-container">
-      <a className="linkMenuLogo" href="#"><img className="m-logo" src={mlogo}/></a>
+      <div className="name-menu-container">
+      <a className="linkNamePortfolio" href="#">Portfolio Malin</a>
       </div>
 
       <nav className="Menu-links-bottom">

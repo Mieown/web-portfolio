@@ -79,6 +79,11 @@ import hmhome2 from './images/hmhome2.png';
 import hmhome3 from './images/hmhome3.png';
 import hmhome4 from './images/hmhome4.png';
 
+import pomodorostart from './images/pomodoropinkstart.png';
+import pomodoro1 from './images/pomodoropink.png';
+import pomodoro2 from './images/pomodoroblue.png';
+import pomodoro3 from './images/pomodoromobilepink.png';
+import pomodoro4 from './images/pomodoromobileblue.png';
 
 const info = [
   {
@@ -190,6 +195,19 @@ const info = [
   },
   {
     classtext: "card-container",
+    name: 'Pomodoro Timer',
+    imgSRC: pomodorostart,
+    img1: pomodoro1,
+    img2: pomodoro2,
+    img3: pomodoro3,
+    img4: pomodoro4,
+    pinfo: 'Pomodoro Timer created in React.',
+    linktext: 'Test the Timer',
+    linkclasstext: 'linktext-show', 
+    link: 'https://mieown.github.io/pomodorotimer/',
+  },
+  {
+    classtext: "card-container",
     name: 'HM Studio',
     imgSRC: studioone,
     img1: studiofirst,
@@ -216,19 +234,6 @@ const info = [
   },
   {
     classtext: "card-container",
-    name: '& Other Stories',
-    imgSRC: shoelace,
-    img1: shoelacepink,
-    img2: shoelacepurple,
-    img3: shoelaceyellow,
-    img4: shoelacepink,
-    pinfo: 'Packaging for shoelaces. Created with Indesign.',
-    linktext: '',
-    linkclasstext: 'linktext-hidden', 
-    link: '',
-  },
-  {
-    classtext: "card-container",
     name: 'COS',
     imgSRC: coscam,
     img1: coscamstart,
@@ -246,9 +251,9 @@ const info = [
     imgSRC: storiesboxtre,
     img1: otherstoriesbox1,
     img2: otherstoriesbox2,
-    img3: otherstoriesbox3,
-    img4: otherstoriesbox4,
-    pinfo: 'Created different gift-boxes. Created with Indesign.',
+    img3: shoelacepink,
+    img4: shoelacepurple,
+    pinfo: 'Packaging for Stories. Created with Indesign.',
     linktext: '',
     linkclasstext: 'linktext-hidden', 
     link: '',

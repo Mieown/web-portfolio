@@ -1,37 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Header.css';
-import Waveanimation from '../../Components/WaveAnimation/Waveanimation';
-import startarrow from '../../images/arrowstartbrown.svg';
 
 function Header() {
 
-  const [isName, setIsName] = useState('scroll');
-
-  const changeText = () => {
-    setIsName('down');
-  };
-
-  const changeBackText = () => {
-    setIsName('scroll');
-  };
-
   return (
-    <div className="Header">
-      <div className="Main-frame frame-top"></div>
-      <div className="Main-frame frame-right"></div>
-      <div className="Main-frame frame-left"></div>
-      <div className="Main-frame frame-bottom"></div>
-      <div className="Text-container-start">
-        <h1 className="Header-header">Hi! I'm Malin</h1>
-        <h2 className="Header-textinfo">Frontend developer & Designer</h2>
-        <div className="Wave-animation-container">
-          <Waveanimation />
-        </div>
-        <div className="P-container">
-          <h2 className="Header-p-text" onMouseEnter={changeText} onMouseLeave={changeBackText}>{isName}</h2>
-        </div>
-        <img className="startarrow" src={startarrow}/>
+    <div className="header">
+      <div className="main-frame frame-top"></div>
+      <div className="main-frame frame-right"></div>
+      <div className="main-frame frame-left"></div>
+      <div className="main-frame frame-bottom"></div>
+      <div className="box-left-top"></div>
+      <div className="box-right-top"></div>
+      <div className="box-left-bottom"></div>
+      <div className="box-right-bottom"></div>
+      <div className="text-container-start">
+        <h1 className="header-header">Hi there! Welcome.<br />I'm <div id="picture-me">Malin</div> and I'm a,
+          <div class="scrollHeader">
+            <span>
+              Frontend Developer<br/>
+              and Designer
+            </span>
+          </div>
+        </h1>
       </div>
+        <div className="p-container">
+          <div className="hoverScroll">
+            <span>
+            <a className="linkScroll" href="#workLink">
+              Scroll<br/>
+              Down<br/>
+              <div id="heart-logo">💜</div>
+              </a>
+            </span>
+          </div>
+        </div>
     </div>
   );
 }

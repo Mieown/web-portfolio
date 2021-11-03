@@ -11,6 +11,8 @@ for (var i = 0; i < 150; i++) {
 
 let t = 0
 
+useEffect(() => {
+
 function animate() {
 
   let points = xs.map(x => {
@@ -24,27 +26,24 @@ function animate() {
     return p[0] + "," + p[1]
   }).join(" L")
 
-  let testapp = document.querySelector("path")
-  testapp.setAttribute("d", path)
+  // let testapp = document.querySelector("path")
+  // testapp.setAttribute("d", path)
 
   t += 0.42
 
   requestAnimationFrame(animate)
 }
 
+animate();
+
 // window.addEventListener("DOMContentLoaded", e=> {
 //   animate()
 // });
 
-useEffect(() => {
-   
-  console.log("hejsan");
-  animate();
-
 });
 
   return (
-    <div className="WaveLoading">
+    <div className="waveLoading">
       <svg>
         <path d="M10,10 L50,100 L90,50"></path>
       </svg>

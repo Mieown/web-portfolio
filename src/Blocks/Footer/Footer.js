@@ -3,8 +3,8 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="Footer">
-      <nav className="Footer-links">
+    <div className="footer">
+      <nav className="footer-links">
         <ul>
           <li>
             <a className="linkFooter" href="#">2021 | Malin Olofsson </a>

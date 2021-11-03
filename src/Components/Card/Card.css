@@ -7,7 +7,9 @@
 .card {
     position: relative;
     justify-content: center;
-    margin-top: -0.25em;
+    border-top: #493011 solid 1px;
+    border-left: #493011 solid 1px;
+    padding: 2.9vw 2.9vw 2.75vw 2.9vw;
 }
 
 .top {
@@ -25,6 +27,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 
 .card:hover .top {
@@ -32,39 +35,21 @@
   }
 
 .name {
-    font-family: 'mbf_taurianregular', serif;
-    width: 80%;
-    margin-top: 10vh;
-    margin-bottom: 2.4vh;
-    font-size: 2.4vw;
+    font-family: 'Agatho', serif;
+    width: 50%;
+    font-size: 1.7vw;
     letter-spacing: 0.06em;
     color: #493011;
     text-align: center;
+    font-weight: lighter;
 }
 
 .cover-img {
-    width: 23.45vw; 
-    height: 41vh; 
+    width: 16.95vw; 
+    height: 29.5vh; 
     object-fit: cover; 
     object-position: 0% 50%;
 }
-
-.button-project {
-    background: none;
-    border: #493011 solid 0.25em;
-    color: #493011;
-    font-size: 0.8vw;
-    padding: 1.8em 2em 1.8em 2em;
-    border-radius: 50%;
-    letter-spacing: 0.08em;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-
-.button-project:hover {
-    background-color: #f8d0fc;
-    border: #f8d0fc solid 0.25em;
-  }
 
 .hiddencard {
     visibility: hidden;
@@ -74,57 +59,54 @@
   @media screen and (min-width: 0px) and (max-width: 369px) {
 
     .cover-img {
-        width: 9.3em; 
-        height: 9.3em; 
+        width: 33.3vw; 
+        height: 18.8vh; 
         object-fit: cover; 
         object-position: 0% 50%;
+    }
+
+    .card {
+        padding: 2.9vw 2.9vw 2vw 2.9vw;
     }
 
     .top {
         opacity: 1;
         background-color: rgba(255, 255, 255, 0.7);
-          }
+        height: 100%;
+        }
 
     .name {
-        margin-top: 7vh;
         font-size: 3.45vw;
-        margin-bottom: 1.4vh;
-        width: 70%;
+        width: 60%;
         line-height: 1.15;
         }
 
-    .button-project {
-        background: none;
-        font-size: 1.6vw;
-        }
   }
 
 
   @media screen and (min-width: 370px) and (max-width: 390px) {
 
     .cover-img {
-        width: 9.7em; 
-        height: 9.7em; 
+        width: 33.3vw; 
+        height: 18.8vh; 
         object-fit: cover; 
         object-position: 0% 50%;
+    }
+
+    .card {
+        padding: 2.9vw 2.9vw 2vw 2.9vw;
     }
 
     .top {
         opacity: 1;
         background-color: rgba(255, 255, 255, 0.7);
-          }
-
-    .name {
-        margin-top: 7vh;
-        font-size: 3.45vw;
-        margin-bottom: 1.4vh;
-        width: 70%;
-        line-height: 1.15;
+        height: 100%;
         }
 
-    .button-project {
-        background: none;
-        font-size: 1.6vw;
+    .name {
+        font-size: 3.45vw;
+        width: 60%;
+        line-height: 1.15;
         }
 
   }
@@ -132,56 +114,60 @@
   @media screen and (min-width: 391px) and (max-width: 600px) {
 
     .cover-img {
-        width: 10.9em; 
-        height: 10.9em; 
+        width: 33.3vw; 
+        height: 18.8vh; 
         object-fit: cover; 
         object-position: 0% 50%;
+    }
+
+    .card {
+        padding: 2.9vw 2.9vw 2vw 2.9vw;
     }
 
     .top {
         opacity: 1;
         background-color: rgba(255, 255, 255, 0.7);
-          }
+        height: 100%;
+        }
 
     .name {
-        margin-top: 7.3vh;
-        font-size: 3.7vw;
-        margin-bottom: 1.4vh;
-        width: 70%;
+        font-size: 3.45vw;
+        width: 60%;
         line-height: 1.15;
         }
-
-    .button-project {
-        background: none;
-        font-size: 1.7vw;
-        }
-
   }
 
   @media screen and (min-width: 601px) and (max-width: 1000px) {
 
     .cover-img {
-        width: 10em; 
-        height: 10em; 
+        width: 33.3vw; 
+        height: 24.5vh; 
         object-fit: cover; 
         object-position: 0% 50%;
+    }
+
+    .card {
+        padding: 2.9vw 2.9vw 2.3vw 2.9vw;
     }
 
     .top {
         opacity: 1;
         background-color: rgba(255, 255, 255, 0.7);
-          }
+        height: 100%;
+    }
 
     .name {
-        margin-top: 4.4vh;
-        font-size: 2.05vw;
-        margin-bottom: 1vh;
-        width: 75%;
-        }
+        font-size: 2.9vw;
+        width: 55%;
+        line-height: 1.15;
+    }
+  }
 
-    .button-project {
-        background: none;
-        font-size: 0.85vw;
-        }
-
+  @media screen and (min-width: 3000px) {
+  
+    .cover-img {
+        width: 16.95vw; 
+        height: 40vh;
+    }
+  
   }

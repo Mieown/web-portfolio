@@ -1,3 +1,4 @@
+
 .popup-div {
     position: fixed;
     top: 0%;
@@ -12,65 +13,76 @@
 }
 
 .popup-bg {
-    height: 80vh;
-    width: 51vw;
-    background-color: #f7f3f3;
+    height: 77vh;
+    width: 48vw;
+    background-color: #fafafa;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    padding-top: 2.6em;
 }
 
 .slider-container {
-    margin-top: -3.4em;
-    margin-bottom: 1.25em;
+    margin-bottom: 1em;
 }
 
 .popup-text-container {
     display: flex;
     flex-direction: row;
-    width: 43vw;
+    width: 41vw;
+}
+
+.left-popup-text {
+    width: 41vw;
 }
 
 .popup-h2 {
-    margin-bottom: 0.33em;
-    font-size: 2vw;
-    font-family: 'mbf_taurianregular', serif;
+    margin-bottom: 0.36em;
+    font-size: 2.2vw;
+    font-family: 'Agatho', serif;
     letter-spacing: 1.3px;
+    font-weight: lighter;
 }
 
 .popup-p {
-    margin-bottom: 1.7em;
+    /* margin-bottom: 1.7em; */
     font-size: 1.2vw;
     line-height: 1.15;
     letter-spacing: 0.15px;
+    font-weight: lighter;
 }
 
 .linktext-show {
+    position: absolute;
+    bottom: 16.6vh;
+    right: 29.8vw;
     text-decoration: none;
     color: #493011;
     font-family: 'Karla', sans-serif;
     font-size: 0.77vw;
-    border: #493011 solid 0.25em;
+    border: #493011 solid 0.12em;
     padding: 1.3em 1.45em 1.3em 1.45em;
     border-radius: 50%;
     font-weight: bold;
     letter-spacing: 0.08em;
-    transition-duration: 0.4s;
+    background: linear-gradient(to right, rgb(240, 240, 240) 50%, #fafafa 50%);
+    background-position: right top;
+    background-size: 250% 100%;
+    transition: all .4s ease-out;
 }
 
 .linktext-show:hover {
-    background-color: #f8d0fc;
-    border: #f8d0fc solid 0.25em;
+    background-position: left top;
 }
 
 .wavyarrow {
-    width: 6%;
+    width: 5.5%;
     position: absolute;
     cursor: pointer;
     display: block;
-    bottom: 14vh;
+    bottom: 16.6vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 369px) {
@@ -224,37 +236,45 @@
 }
 
 @media screen and (min-width: 2501px) and (max-width: 2999px) {
+
+    .popup-bg {
+        height: 76vh;
+        width: 47vw;
+        padding-top: 4.4em;
+    }
+
     .slider-container {
-        margin-top: -5em;
         margin-bottom: 1.3em;
     }
 
-    .popup-p {
-        margin-bottom: 2.1em;
+    .popup-h2 {
+        margin-bottom: 0.4em;
     }
+
 }
   
 @media screen and (min-width: 3000px) {
-    .wavyarrow {
-        width: 5%;
-    }
 
-    .linktext-show {
-        position: absolute;
-        left: 63vw;
-        font-size: 0.7vw;
-    }
-    .popup-p {
-        margin-bottom: 1.6em;
-    }
-
-    .popup-h2 {
-        margin-bottom: 0.2em;
+    .popup-bg {
+        height: 70vh;
+        width: 47vw;
+        padding-top: 5.7em;
     }
 
     .slider-container {
-        margin-top: -3.4em;
-        margin-bottom: 1.45em;
+        margin-bottom: 1.3em;
+    }
+
+    .popup-h2 {
+        margin-bottom: 0.4em;
+    }
+
+    .linktext-show {
+        bottom: 19vh;
+    }
+    
+    .wavyarrow {
+        bottom: 19vh;
     }
 
 }
