@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css';
+import mlogo from '../../images/malinlogopinkten.png';
 
 
 function Menu() {
@@ -20,7 +21,9 @@ function Menu() {
       </nav>
 
       <div className="name-menu-container">
-      <a className="linkNamePortfolio" href="#">Portfolio Malin</a>
+      <a className="mLogoLink" href="#">
+      <img className="mLogo" src={mlogo}/>
+      </a>
       </div>
 
       <nav className="Menu-links-bottom">

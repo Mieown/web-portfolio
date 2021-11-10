@@ -4,17 +4,10 @@
   z-index: 12;
 }
 
-.linkNamePortfolio {
-  position: absolute;
-  margin-top: 1.21vw;
-  margin-left: 9.5vw;
-  width: 14vw;
-  text-decoration: none;
-  color: #493011;
-  font-family: 'Agatho', serif;
-  font-size: 1.63vw;
-  letter-spacing: 0.08em;
-  font-weight: 400;
+.mLogo {
+  width: 2.5vw;
+  margin-top: 1.0545vw;
+  margin-left: 9.45vw;
 }
 
 .Menu-links {
@@ -29,7 +22,6 @@
   font-size: 0.95vw;
   overflow: hidden;
   position: fixed;
-  /* top: 0; */
   z-index: 10;
   right: 4.5vw;
   left: 3.1vw;
@@ -128,22 +120,19 @@ li {
   }
 
   .name-menu-container {
-    position: fixed;
-    z-index: 12;
+    width: 100%;
   }
 
-  .linkNamePortfolio {
-    position: none;
-    margin-top: 3.475vw;
-    margin-left: 39vw;
-    margin-right: 39vw;
-    width: 26vw;
-    text-decoration: none;
-    color: #493011;
-    font-family: 'Agatho', serif;
-    font-size: 3.3vw;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+  .mLogoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mLogo {
+    width: 5.6vw;
+    margin-top: 2.75vw;
+    margin-left: 0vw;
   }
 
   .Menu-links-bottom ul {
@@ -193,22 +182,19 @@ li {
   }
 
   .name-menu-container {
-    position: fixed;
-    z-index: 12;
+    width: 100%;
   }
 
-  .linkNamePortfolio {
-    position: none;
-    margin-top: 3.59vw;
-    margin-left: 39vw;
-    margin-right: 39vw;
-    width: 26vw;
-    text-decoration: none;
-    color: #493011;
-    font-family: 'Agatho', serif;
-    font-size: 3.2vw;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+  .mLogoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mLogo {
+    width: 5.6vw;
+    margin-top: 2.75vw;
+    margin-left: 0vw;
   }
 
   .Menu-links-bottom ul {
@@ -218,6 +204,10 @@ li {
     font-family: 'Karla', sans-serif;
     font-size: 1.6vw;
     transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-top: 1.05em;
     position: fixed;
     bottom: -29.8vh;
@@ -258,22 +248,19 @@ li {
   }
 
   .name-menu-container {
-    position: fixed;
-    z-index: 12;
+    width: 100%;
   }
 
-  .linkNamePortfolio {
-    position: none;
-    margin-top: 3.5vw;
-    margin-left: 38.5vw;
-    margin-right: 38.5vw;
-    width: 26vw;
-    text-decoration: none;
-    color: #493011;
-    font-family: 'Agatho', serif;
-    font-size: 3.3vw;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+  .mLogoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mLogo {
+    width: 5.6vw;
+    margin-top: 2.75vw;
+    margin-left: 0vw;
   }
 
   .Menu-links-bottom ul {
@@ -283,6 +270,10 @@ li {
     font-family: 'Karla', sans-serif;
     font-size: 1.6vw;
     transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-top: 1.05em;
     position: fixed;
     bottom: -29.8vh;
@@ -323,22 +314,19 @@ li {
   }
 
   .name-menu-container {
-    position: fixed;
-    z-index: 12;
+    width: 100%;
   }
 
-  .linkNamePortfolio {
-    position: none;
-    margin-top: 3.575vw;
-    margin-left: 39vw;
-    margin-right: 39vw;
-    width: 26vw;
-    text-decoration: none;
-    color: #493011;
-    font-family: 'Agatho', serif;
-    font-size: 3vw;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+  .mLogoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mLogo {
+    width: 5.5vw;
+    margin-top: 2.7vw;
+    margin-left: 0vw;
   }
 
   .Menu-links-bottom ul {
@@ -348,6 +336,10 @@ li {
     font-family: 'Karla', sans-serif;
     font-size: 1.7vw;
     transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-top: 1.05em;
     position: fixed;
     bottom: -41vh;

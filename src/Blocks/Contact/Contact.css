@@ -1,8 +1,8 @@
 .contact {
   background: #ffffff;
   min-width: 100vw;
-  padding-top: 13vh;
-  padding-bottom: 10.5vh;
+  padding-top: 11vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: row;
   padding-left: 9.6vw;
@@ -16,7 +16,7 @@
 }
 
 .header-about {
-  font-size: 6.7vw;
+  font-size: 6.5vw;
   letter-spacing: 1.1px;
   margin-bottom: 0.26em;
   text-align: left;
@@ -39,7 +39,7 @@
 }
 
 .contact-header {
-  font-size: 6.7vw;
+  font-size: 6.5vw;
   letter-spacing: 1.1px;
   margin-bottom: 0.26em;
   font-weight: 400;
@@ -117,7 +117,7 @@
 @media screen and (min-width: 0px) and (max-width: 369px) {
   
   .contact {
-    padding-top: 10vh;
+    padding-top: 9vh;
     padding-bottom: 8vh;
     flex-direction: column;
     padding-left: 17.5vw;
@@ -164,11 +164,10 @@
 
 }
 
-
 @media screen and (min-width: 370px) and (max-width: 390px) {
 
   .contact {
-  padding-top: 10vh;
+  padding-top: 9vh;
   padding-bottom: 8vh;
   flex-direction: column;
   padding-left: 17.5vw;
@@ -218,7 +217,7 @@
 @media screen and (min-width: 391px) and (max-width: 600px) {
 
   .contact {
-    padding-top: 10vh;
+    padding-top: 9vh;
     padding-bottom: 8vh;
     flex-direction: column;
     padding-left: 17.5vw;
@@ -268,7 +267,7 @@
 @media screen and (min-width: 601px) and (max-width: 1000px) {
 
   .contact {
-    padding-top: 10vh;
+    padding-top: 9vh;
     padding-bottom: 8vh;
     flex-direction: column;
     padding-left: 17.4vw;

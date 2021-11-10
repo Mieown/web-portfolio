@@ -9,6 +9,7 @@ import PopUp from './Blocks/PopUp/PopUp';
 import Imagebanner from './Components/Imagebanner/Imagebanner';
 import Loader from './Blocks/Loader/Loader';
 import info from './info';
+import {Helmet} from "react-helmet";
 import { gsap, Power3 } from 'gsap';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -65,6 +66,12 @@ useEffect(() => {
       opacity: 0,
       ease: "power3.out"
     })
+    .from('.marquee--inner', {
+      duration: 1,
+      y: '100',
+      opacity: 0,
+      ease: "power3.out"
+    })
     .from('.header-about, .contact-header', {
         duration: 1,
         y: '100',
@@ -88,19 +95,7 @@ useEffect(() => {
       y: '100',
       opacity: 0,
       ease: "power3.out"
-    })
-    .from('.marquee--inner', {
-      duration: 1,
-      y: '100',
-      opacity: 0,
-      ease: "power3.out"
-    })
-      .from('.linkFooter', {
-        duration: 1,
-        y: '100',
-        opacity: 0,
-        ease: "power3.out"
-      });
+    });
   }  else{
       ScrollTrigger.refresh();
   }
@@ -109,6 +104,13 @@ useEffect(() => {
 
   return (
     <div className="App">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Malin Portfolio</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <meta name="description" content="Malins Frontend Projects" />
+      </Helmet>
+
       { 
         loading ?
         <Loader />
@@ -117,8 +119,8 @@ useEffect(() => {
         <Menu />
         <Header />
         <Work isOpened={isOpened} setIsOpened={setIsOpened} />
-        <Contact />
         <Imagebanner />
+        <Contact />
         <Footer />
           {isOpened && 
           <PopUp 

@@ -63,7 +63,7 @@ export default function Contact() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="name"
+                  placeholder="Name"
                   name="name"
                 />
               </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                 <input
                   type="email"
                   className="form-control"
-                  placeholder="email"
+                  placeholder="Email"
                   name="email"
                 />
               </div>
@@ -79,7 +79,7 @@ export default function Contact() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="subject"
+                  placeholder="Subject"
                   name="subject"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                   className="form-control form-control-message"
                   cols="30"
                   rows="11"
-                  placeholder="message"
+                  placeholder="Message"
                   name="message"
                 ></textarea>
               </div>

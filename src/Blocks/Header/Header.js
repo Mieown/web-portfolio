@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
+import imageme from '../../images/pictureofme.png';
 
 function Header() {
+
+  const [meImage, setMeImage] = useState(false)
+  
 
   return (
     <div className="header">
@@ -14,8 +18,7 @@ function Header() {
       <div className="box-left-bottom"></div>
       <div className="box-right-bottom"></div>
       <div className="text-container-start">
-        <h1 className="header-header">Hi there! Welcome.<br />I'm <div id="picture-me">Malin</div> and I'm a,
-          <div class="scrollHeader">
+        <h1 className="header-header">Hi there! Welcome.<br />I'm <div id="picture-me" onMouseEnter={() => setMeImage(true)} onMouseLeave={() => setMeImage(false)}>Malin</div> <img className="imageme" style= {{ visibility: meImage ? "" : 'hidden' }} src={imageme}/> and I'm a, <div class="scrollHeader">
             <span>
               Frontend Developer<br/>
               and Designer

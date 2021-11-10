@@ -20,11 +20,11 @@ const Slider = ({ img1, img2, img3, img4 }) => {
     console.log(window.innerWidth);
 
     if (window.innerWidth < 600) {
-      setIsWidth(68 + 'vw');
-      setIsHeight(21 + 'vh'); 
+      setIsWidth(62 + 'vw');
+      setIsHeight(18 + 'vh'); 
     }   else if (window.innerWidth < 800) {
-      setIsWidth(69 + 'vw');
-      setIsHeight(29 + 'vh'); 
+      setIsWidth(65 + 'vw');
+      setIsHeight(27 + 'vh'); 
     }   else if (window.innerWidth > 3000) {
       setIsWidth(41 + 'vw');
       setIsHeight(32 + 'vh'); 
