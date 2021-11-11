@@ -2,7 +2,8 @@
 
 My portfolio!
 
-Here you can see my portfolio:
+Check it out here:
+https://mieown.github.io/web-portfolio/
 
 🏁 Goals:
 
