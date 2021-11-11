@@ -16,7 +16,7 @@
 
 .Menu-links ul {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   list-style-type: none;
   font-family: 'Karla', sans-serif;
   font-size: 0.95vw;
@@ -27,6 +27,12 @@
   left: 3.1vw;
 }
 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ .Menu-links ul {
+    left: 12vw;
+  }
+}
+
 li {
   display: inline;
 }
@@ -35,7 +41,8 @@ li {
 .linkWork,
 .linkContact {
   border-left: #493011 solid 1px;
-  padding: 1.64vw 1.72vw 1.64vw 1.72vw;
+  border-bottom: #493011 solid 1px;
+  padding: 1.63vw 1.72vw 1.63vw 1.72vw;
 }
 
 .linkContact {
@@ -108,7 +115,7 @@ li {
     justify-content: center;
     bottom: 0em;
     top: none;
-    font-size: 1.68vw;
+    font-size: 2.4vw;
   }
 
   .linkAbout,
@@ -116,7 +123,7 @@ li {
   .linkContact {
     border-left: #493011 solid 1px;
     border-bottom: #493011 solid 1px;
-    padding: 4.2vw 10.4vw 4.2vw 10.4vw;
+    padding: 3.9vw 9.2vw 3.9vw 9.2vw;
   }
 
   .name-menu-container {
@@ -130,8 +137,8 @@ li {
   }
 
   .mLogo {
-    width: 5.6vw;
-    margin-top: 2.75vw;
+    width: 6.4vw;
+    margin-top: 2.365vw;
     margin-left: 0vw;
   }
 
@@ -140,13 +147,13 @@ li {
     justify-content: flex-end;
     list-style-type: none;
     font-family: 'Karla', sans-serif;
-    font-size: 1.7vw;
+    font-size: 2vw;
     transform: rotate(-90deg);
     padding-top: 1.05em;
     position: fixed;
-    bottom: -29.8vh;
+    bottom: -27.8vh;
     z-index: 13;
-    margin-right: -89.9vw;
+    margin-right: -89vw;
   }
   
   .linkMenuBottom {
@@ -170,7 +177,7 @@ li {
     justify-content: center;
     bottom: 0em;
     top: none;
-    font-size: 1.8vw;
+    font-size: 2.4vw;
   }
 
   .linkAbout,
@@ -178,7 +185,7 @@ li {
   .linkContact {
     border-left: #493011 solid 1px;
     border-bottom: #493011 solid 1px;
-    padding: 4.1vw 10.2vw 4.1vw 10.2vw;
+    padding: 3.9vw 9.2vw 3.9vw 9.2vw;
   }
 
   .name-menu-container {
@@ -192,8 +199,8 @@ li {
   }
 
   .mLogo {
-    width: 5.6vw;
-    margin-top: 2.75vw;
+    width: 6.2vw;
+    margin-top: 2.5vw;
     margin-left: 0vw;
   }
 
@@ -202,7 +209,7 @@ li {
     justify-content: flex-end;
     list-style-type: none;
     font-family: 'Karla', sans-serif;
-    font-size: 1.6vw;
+    font-size: 2vw;
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -210,9 +217,9 @@ li {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-top: 1.05em;
     position: fixed;
-    bottom: -29.8vh;
+    bottom: -27.5vh;
     z-index: 13;
-    margin-right: -89.9vw;
+    margin-right: -89.1vw;
   }
   
   .linkMenuBottom {
@@ -236,7 +243,7 @@ li {
     justify-content: center;
     bottom: 0em;
     top: none;
-    font-size: 1.68vw;
+    font-size: 2.4vw;
   }
 
   .linkAbout,
@@ -244,7 +251,7 @@ li {
   .linkContact {
     border-left: #493011 solid 1px;
     border-bottom: #493011 solid 1px;
-    padding: 4.3vw 10.4vw 4.3vw 10.4vw;
+    padding: 3.9vw 9.2vw 3.9vw 9.2vw;
   }
 
   .name-menu-container {
@@ -258,8 +265,8 @@ li {
   }
 
   .mLogo {
-    width: 5.6vw;
-    margin-top: 2.75vw;
+    width: 6.2vw;
+    margin-top: 2.5vw;
     margin-left: 0vw;
   }
 
@@ -268,7 +275,7 @@ li {
     justify-content: flex-end;
     list-style-type: none;
     font-family: 'Karla', sans-serif;
-    font-size: 1.6vw;
+    font-size: 2vw;
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -276,9 +283,9 @@ li {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-top: 1.05em;
     position: fixed;
-    bottom: -29.8vh;
+    bottom: -28vh;
     z-index: 13;
-    margin-right: -89.9vw;
+    margin-right: -89vw;
   }
   
   .linkMenuBottom {
@@ -302,7 +309,7 @@ li {
     justify-content: center;
     bottom: 0em;
     top: none;
-    font-size: 1.68vw;
+    font-size: 2.2vw;
   }
 
   .linkAbout,
@@ -310,7 +317,7 @@ li {
   .linkContact {
     border-left: #493011 solid 1px;
     border-bottom: #493011 solid 1px;
-    padding: 4.35vw 10.4vw 4.35vw 10.4vw;
+    padding: 4.1vw 9.6vw 4.1vw 9.6vw;
   }
 
   .name-menu-container {
@@ -324,7 +331,7 @@ li {
   }
 
   .mLogo {
-    width: 5.5vw;
+    width: 5.7vw;
     margin-top: 2.7vw;
     margin-left: 0vw;
   }
@@ -334,7 +341,7 @@ li {
     justify-content: flex-end;
     list-style-type: none;
     font-family: 'Karla', sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -344,7 +351,7 @@ li {
     position: fixed;
     bottom: -41vh;
     z-index: 13;
-    margin-right: -89.8vw;
+    margin-right: -89.9vw;
   }
   
   .linkMenuBottom {
