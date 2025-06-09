@@ -5,25 +5,26 @@
 }
 
 .text-container-work {
-  color: #493011;
+  color: #1a1b1f;
   padding-left: 9.6vw;
   padding-right: 31vw;
   text-align: left;
-  padding-bottom: 8.3vh;
+  padding-bottom: 6.3vh;
 }
 
 .work-header {
-  font-size: 6.5vw;
+  font-size: 6.4vw;
   font-weight: 400;
   letter-spacing: 1.1px;
   padding-bottom: 0.26em;
 }
 
 .work-textinfo {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35vw;
   line-height: 1.28;
   letter-spacing: 0.2px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .cards-container {
@@ -38,7 +39,6 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 369px) {
-  
   .work {
     padding-top: 4em;
     margin-left: 6.3vw;
@@ -59,11 +59,9 @@
   .work-textinfo {
     font-size: 4vw;
   }
-
 }
 
 @media screen and (min-width: 370px) and (max-width: 390px) {
-
   .work {
     padding-top: 4em;
     margin-left: 6.3vw;
@@ -84,11 +82,9 @@
   .work-textinfo {
     font-size: 4vw;
   }
-
 }
 
 @media screen and (min-width: 391px) and (max-width: 600px) {
-
   .work {
     padding-top: 4em;
     margin-left: 6.3vw;
@@ -109,11 +105,9 @@
   .work-textinfo {
     font-size: 4vw;
   }
-
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-
   .work {
     margin-left: 6.3vw;
     margin-right: 6.3vw;
@@ -122,7 +116,7 @@
   .cards-container {
     padding-top: 2vh;
   }
-  
+
   .text-container-work {
     padding-left: 11.5vw;
     padding-right: 9.6vw;
@@ -137,5 +131,4 @@
   .work-textinfo {
     font-size: 2.7vw;
   }
-
 }

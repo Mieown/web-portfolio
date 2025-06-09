@@ -1,5 +1,5 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -7,7 +7,9 @@ function Footer() {
       <nav className="footer-links">
         <ul>
           <li>
-            <a className="linkFooter" href="#">2021 | Malin Olofsson </a>
+            <a className="linkFooter" href="#">
+              2025 | Malin Olofsson{" "}
+            </a>
           </li>
         </ul>
       </nav>

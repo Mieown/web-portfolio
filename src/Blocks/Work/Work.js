@@ -9,10 +9,9 @@ function Work({ isOpened, setIsOpened }) {
       <div className="text-container-work">
         <h1 className="work-header">My projects</h1>
         <p className="work-textinfo">
-          This is a collection of projects I've created, either independently or
-          in collaboration with classmates and colleagues. It includes both
+          This is a collection of projects I've created. It includes both
           web-based and print projects. Explore each one to learn more about the
-          process behind them — and feel free to try them out!
+          process behind them - feel free to try them out!
         </p>
       </div>
       <div className="cards-container">

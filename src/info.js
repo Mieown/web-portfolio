@@ -13,6 +13,7 @@ import coscam from "./images/coscam.jpeg";
 import simonerocha from "./images/simonerocha.png";
 import hmconscious from "./images/hmconscious.jpeg";
 import hmhome from "./images/hmforms.jpeg";
+import infocaption from "./images/infocaption1.png";
 
 import rotastart from "./images/rota-start-start.png";
 import rotaform from "./images/rota-form.png";
@@ -84,37 +85,28 @@ import pomodoro2 from "./images/pomodoroblue.png";
 import pomodoro3 from "./images/pomodoromobilepink.png";
 import pomodoro4 from "./images/pomodoromobileblue.png";
 
+import infocaption1 from "./images/infocaption1.png";
+import infocaption2 from "./images/infocaption2.png";
+import infocaption3 from "./images/infocaption3.png";
+import infocaption4 from "./images/infocaption4.png";
+
 const info = [
   {
     classtext: "hiddencard",
   },
   {
     classtext: "card-container",
-    name: "Rota App",
-    imgSRC: rota,
-    img1: rotastart,
-    img2: rotagoal,
-    img3: rotastatus,
-    img4: rotaform,
+    name: "Infocaption",
+    imgSRC: infocaption1,
+    img1: infocaption1,
+    img2: infocaption2,
+    img3: infocaption3,
+    img4: infocaption4,
     pinfo:
-      'A "Habit tracker" application where you can measure your habits and set your own goals. Created with vanilla Javasctript.',
-    linktext: "See the code",
+      "I worked on the development of a digital product for creating interactive guides and processes. My role included frontend development, UX/UI design, and guide creation — focusing on usability, clarity, and a seamless user experience.",
+    linktext: "About Infocaption",
     linkclasstext: "linktext-show",
-    link: "https://github.com/elinordin/habit-tracker",
-  },
-  {
-    classtext: "card-container",
-    name: "Wellbeing Insurance",
-    imgSRC: feelgoodinsurancestart,
-    img1: feelgoodinsurancestart,
-    img2: feelgoodinsurancesecond,
-    img3: feelgoodinsurancethird,
-    img4: feelgoodinsurancelast,
-    pinfo:
-      "Design project for a own fictional company. Created with Illustrator.",
-    linktext: "",
-    linkclasstext: "linktext-hidden",
-    link: "",
+    link: "https://infocaption.com/",
   },
   {
     classtext: "card-container",
@@ -125,10 +117,24 @@ const info = [
     img3: braivestartmobile,
     img4: braiverecommendmobile,
     pinfo:
-      "Project with the company Braive. The focus was on improving their design and usability for their logged in customers. Created with Figma.",
+      "UX/UI project in collaboration with Braive, aimed at enhancing the user experience and interface design for logged-in customers. Designed in Figma.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
+  },
+  {
+    classtext: "card-container",
+    name: "Rota App",
+    imgSRC: rota,
+    img1: rotastart,
+    img2: rotagoal,
+    img3: rotastatus,
+    img4: rotaform,
+    pinfo:
+      "A habit tracking app that allows users to monitor routines and define custom goals. Developed using JavaScript.",
+    linktext: "View the code",
+    linkclasstext: "linktext-show",
+    link: "https://github.com/elinordin/habit-tracker",
   },
   {
     classtext: "card-container",
@@ -138,8 +144,9 @@ const info = [
     img2: mygamefabricinside,
     img3: mygamefabrickeypad,
     img4: mygamefabricsky,
-    pinfo: "Created a VR game with A-frame and JavaScript.",
-    linktext: "Play my game",
+    pinfo:
+      "Built an interactive VR game experience with A-Frame and JavaScript.",
+    linktext: "Try the game",
     linkclasstext: "linktext-show",
     link: "https://escapefromhyperisland.github.io/world-8/malin/",
   },
@@ -152,10 +159,38 @@ const info = [
     img3: ricolathird,
     img4: ricolalast,
     pinfo:
-      "Project with the company Ricola. The main task was to improve their transparency for their work with sustainability. Created with vanilla JavaScript.",
-    linktext: "See the Website",
+      "Worked with Ricola to create a clearer, more transparent presentation of their sustainability initiatives. Built with JavaScript.",
+    linktext: "Visit the site",
     linkclasstext: "linktext-show",
     link: "https://pablogalisteo.github.io/ricola/",
+  },
+  {
+    classtext: "card-container",
+    name: "Tounge Twister",
+    imgSRC: toungetwister,
+    img1: toungetwisterstart,
+    img2: toungetwisecond,
+    img3: toungetwister,
+    img4: toungetwistlast,
+    pinfo:
+      "A game where you need to pronounce tricky sentences correctly to keep your tongue steady. Built using two web APIs and JavaScript.",
+    linktext: "Play the game",
+    linkclasstext: "linktext-show",
+    link: "https://mieown.github.io/Tongue-twister/",
+  },
+  {
+    classtext: "card-container",
+    name: "Wellbeing Insurance",
+    imgSRC: feelgoodinsurancestart,
+    img1: feelgoodinsurancestart,
+    img2: feelgoodinsurancesecond,
+    img3: feelgoodinsurancethird,
+    img4: feelgoodinsurancelast,
+    pinfo:
+      "Visual identity project for a self-created fictional company. Designed in Illustrator.",
+    linktext: "",
+    linkclasstext: "linktext-hidden",
+    link: "",
   },
   {
     classtext: "card-container",
@@ -166,8 +201,8 @@ const info = [
     img3: api,
     img4: api,
     pinfo:
-      "Created my own web-API. Created it with MongoDB, Robo 3T and Heroku. The plan is to use it for a Tarot-Card application.",
-    linktext: "See the API",
+      "Developed a custom web API using MongoDB, Robo 3T, and Heroku. Designed to support a Tarot card application.",
+    linktext: "View the API",
     linkclasstext: "linktext-show",
     link: "https://rws-cards-api.herokuapp.com/api/v1/cards",
   },
@@ -180,37 +215,10 @@ const info = [
     img3: firstaidtherapythird,
     img4: firstaidtherapylastlast,
     pinfo:
-      "Is an application that boosts you. Created with Vanilla Javascript.",
-    linktext: "See the Website",
+      "An application designed to boost your motivation. Built with JavaScript.",
+    linktext: "Try the app",
     linkclasstext: "linktext-show",
     link: "https://mieown.github.io/MagicEightBall/",
-  },
-  {
-    classtext: "card-container",
-    name: "Tounge Twister",
-    imgSRC: toungetwister,
-    img1: toungetwisterstart,
-    img2: toungetwisecond,
-    img3: toungetwister,
-    img4: toungetwistlast,
-    pinfo:
-      "Is a game where you have to keep your tongue right, you need to pronounce difficult sentences correctly. Created with two web API:s and JavaScript.",
-    linktext: "Play the game",
-    linkclasstext: "linktext-show",
-    link: "https://mieown.github.io/Tongue-twister/",
-  },
-  {
-    classtext: "card-container",
-    name: "Pomodoro Timer",
-    imgSRC: pomodorostart,
-    img1: pomodoro1,
-    img2: pomodoro2,
-    img3: pomodoro3,
-    img4: pomodoro4,
-    pinfo: "Pomodoro Timer created in React.",
-    linktext: "Test the Timer",
-    linkclasstext: "linktext-show",
-    link: "https://mieown.github.io/pomodorotimer/",
   },
   {
     classtext: "card-container",
@@ -221,7 +229,7 @@ const info = [
     img3: studiothird,
     img4: studiofirst,
     pinfo:
-      "Project for HM studio 2020 where I worked with the graphics and the packaging. Created with Illustrator, Indesign and photoshop.",
+      "Graphic and packaging design project for HM Studio (2020). Crafted with Illustrator, InDesign, and Photoshop.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -235,7 +243,7 @@ const info = [
     img3: whoolichenthird,
     img4: whoolichenlast,
     pinfo:
-      "The project Whoolichen x HM where I worked with the graphics and the packaging. Created with Illustrator, Indesign and photoshop.",
+      "Worked on graphics and packaging design for the Whoolichen x HM collaboration. Crafted with Illustrator, InDesign, and Photoshop.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -248,7 +256,7 @@ const info = [
     img2: coscamstart,
     img3: coscamstart,
     img4: coscamstart,
-    pinfo: "Packaging for a comb. Created with Indesign.",
+    pinfo: "Comb packaging for COS created with InDesign.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -261,7 +269,7 @@ const info = [
     img2: otherstoriesbox2,
     img3: shoelacepink,
     img4: shoelacepurple,
-    pinfo: "Packaging for Stories. Created with Indesign.",
+    pinfo: "Packaging design for Stories. Created with InDesign.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -275,7 +283,7 @@ const info = [
     img3: simone3,
     img4: simone4,
     pinfo:
-      "Worked in HM:s guest designer project 2020, Simona Rocha. Created the graphics and the packaging. Created with Illustrator and Indesign.",
+      "Worked on HM’s Guest Designer Project 2020 with Simona Rocha, creating graphics and packaging. Designed using Illustrator and InDesign.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -288,7 +296,8 @@ const info = [
     img2: hmconsciousstart,
     img3: hmconsciousstart,
     img4: hmconsciousstart,
-    pinfo: "Worked with HM Conscious. Created with Illustrator and Indesign.",
+    pinfo:
+      "Design work for HM Conscious. Created with Illustrator and InDesign.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",
@@ -302,7 +311,7 @@ const info = [
     img3: hmhome3,
     img4: hmhome4,
     pinfo:
-      "Worked with HM Home. Created with Illustrator, Indesign and photoshop.",
+      "Design project for HM Home, created with Illustrator, InDesign, and Photoshop.",
     linktext: "",
     linkclasstext: "linktext-hidden",
     link: "",

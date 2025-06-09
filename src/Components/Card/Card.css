@@ -1,173 +1,164 @@
 .card-container {
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
 }
 
 .card {
-    position: relative;
-    justify-content: center;
-    border-top: #493011 solid 1px;
-    border-left: #493011 solid 1px;
-    padding: 2.9vw 2.9vw 2.75vw 2.9vw;
+  position: relative;
+  justify-content: center;
+  border-top: #1a1b1f solid 1px;
+  border-left: #1a1b1f solid 1px;
+  padding: 2.9vw 2.9vw 2.75vw 2.9vw;
 }
 
 .top {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 98.7%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98.7%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255);
+  /* background-color: rgba(252, 219, 210); */
+  cursor: pointer;
 }
 
 .card:hover .top {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .name {
-    font-family: 'agathoregular', serif;
-    width: 50%;
-    font-size: 1.7vw;
-    letter-spacing: 0.06em;
-    color: #493011;
-    text-align: center;
-    font-weight: lighter;
+  font-family: "agathoregular", serif;
+  width: 50%;
+  font-size: 1.7vw;
+  letter-spacing: 0.06em;
+  color: #1a1b1f;
+  text-align: center;
+  font-weight: lighter;
 }
 
 .cover-img {
-    width: 16.95vw; 
-    height: 29.5vh; 
-    object-fit: cover; 
-    object-position: 0% 50%;
+  width: 16.95vw;
+  height: 29.5vh;
+  object-fit: cover;
+  object-position: 0% 50%;
 }
 
 .hiddencard {
-    visibility: hidden;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 0px) and (max-width: 369px) {
+  .cover-img {
+    width: 33.3vw;
+    height: 18.8vh;
+    object-fit: cover;
+    object-position: 0% 50%;
   }
 
-
-  @media screen and (min-width: 0px) and (max-width: 369px) {
-
-    .cover-img {
-        width: 33.3vw; 
-        height: 18.8vh; 
-        object-fit: cover; 
-        object-position: 0% 50%;
-    }
-
-    .card {
-        padding: 2.9vw 2.9vw 2vw 2.9vw;
-    }
-
-    .top {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 100%;
-        }
-
-    .name {
-        font-size: 3.45vw;
-        width: 60%;
-        line-height: 1.15;
-        }
-
+  .card {
+    padding: 2.9vw 2.9vw 2vw 2.9vw;
   }
 
-
-  @media screen and (min-width: 370px) and (max-width: 390px) {
-
-    .cover-img {
-        width: 33.3vw; 
-        height: 18.8vh; 
-        object-fit: cover; 
-        object-position: 0% 50%;
-    }
-
-    .card {
-        padding: 2.9vw 2.9vw 2vw 2.9vw;
-    }
-
-    .top {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 100%;
-        }
-
-    .name {
-        font-size: 3.45vw;
-        width: 60%;
-        line-height: 1.15;
-        }
-
+  .top {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
   }
 
-  @media screen and (min-width: 391px) and (max-width: 600px) {
+  .name {
+    font-size: 3.45vw;
+    width: 60%;
+    line-height: 1.15;
+  }
+}
 
-    .cover-img {
-        width: 33.3vw; 
-        height: 18.8vh; 
-        object-fit: cover; 
-        object-position: 0% 50%;
-    }
-
-    .card {
-        padding: 2.9vw 2.9vw 2vw 2.9vw;
-    }
-
-    .top {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 100%;
-        }
-
-    .name {
-        font-size: 3.45vw;
-        width: 60%;
-        line-height: 1.15;
-        }
+@media screen and (min-width: 370px) and (max-width: 390px) {
+  .cover-img {
+    width: 33.3vw;
+    height: 18.8vh;
+    object-fit: cover;
+    object-position: 0% 50%;
   }
 
-  @media screen and (min-width: 601px) and (max-width: 1000px) {
-
-    .cover-img {
-        width: 33.3vw; 
-        height: 24.5vh; 
-        object-fit: cover; 
-        object-position: 0% 50%;
-    }
-
-    .card {
-        padding: 2.9vw 2.9vw 2.3vw 2.9vw;
-    }
-
-    .top {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 100%;
-    }
-
-    .name {
-        font-size: 2.9vw;
-        width: 55%;
-        line-height: 1.15;
-    }
+  .card {
+    padding: 2.9vw 2.9vw 2vw 2.9vw;
   }
 
-  @media screen and (min-width: 3000px) {
-  
-    .cover-img {
-        width: 16.95vw; 
-        height: 40vh;
-    }
-  
+  .top {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
   }
+
+  .name {
+    font-size: 3.45vw;
+    width: 60%;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 600px) {
+  .cover-img {
+    width: 33.3vw;
+    height: 18.8vh;
+    object-fit: cover;
+    object-position: 0% 50%;
+  }
+
+  .card {
+    padding: 2.9vw 2.9vw 2vw 2.9vw;
+  }
+
+  .top {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+  }
+
+  .name {
+    font-size: 3.45vw;
+    width: 60%;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .cover-img {
+    width: 33.3vw;
+    height: 24.5vh;
+    object-fit: cover;
+    object-position: 0% 50%;
+  }
+
+  .card {
+    padding: 2.9vw 2.9vw 2.3vw 2.9vw;
+  }
+
+  .top {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+  }
+
+  .name {
+    font-size: 2.9vw;
+    width: 55%;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .cover-img {
+    width: 16.95vw;
+    height: 40vh;
+  }
+}

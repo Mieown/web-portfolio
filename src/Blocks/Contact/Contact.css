@@ -10,13 +10,13 @@
 }
 
 .textcontainer-about {
-  font-family: 'Karla', sans-serif;
-  color: #493011;
+  font-family: "Karla", sans-serif;
+  color: #1a1b1f;
   padding-right: 9vw;
 }
 
 .header-about {
-  font-size: 6.5vw;
+  font-size: 6.4vw;
   letter-spacing: 1.1px;
   margin-bottom: 0.26em;
   text-align: left;
@@ -24,32 +24,34 @@
 }
 
 .text-about {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35vw;
   line-height: 1.28;
   letter-spacing: 0.2px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .form-text-container {
-  font-family: 'Karla', sans-serif;
-  color: #493011;
+  font-family: "Karla", sans-serif;
+  color: #1a1b1f;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
 .contact-header {
-  font-size: 6.5vw;
+  font-size: 6.4vw;
   letter-spacing: 1.1px;
   margin-bottom: 0.26em;
   font-weight: 400;
 }
 
 .contact-textinfo {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35vw;
   line-height: 1.28;
   letter-spacing: 0.2px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .form-container {
@@ -59,16 +61,16 @@
 .form-control {
   width: 35vw;
   font-size: 1.05vw;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   background-color: #ffffff;
-  color: #493011;
+  color: #1a1b1f;
   border: none;
   padding: 1.48vh 0vw 1.48vh 1.1vw;
-  border-bottom: #493011 solid 1px;
+  border-bottom: #1a1b1f solid 1px;
 }
 
 .form-control-message {
-  border: #493011 solid 1px;
+  border: #1a1b1f solid 1px;
   margin-top: 1.23em;
 }
 
@@ -79,43 +81,44 @@
   padding-bottom: 1.26vh;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #493011;
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1a1b1f;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #493011;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1a1b1f;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: #493011;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1a1b1f;
 }
 
 .btn-submit {
   margin-top: 2vh;
   margin-left: 24.3vw;
-  color: #493011;
+  color: #1a1b1f;
   padding: 3.6vh 1.7vw 3.6vh 1.7vw;
-  border: #493011 solid 0.12em;
+  border: #1a1b1f solid 0.12em;
   border-radius: 50%;
   display: block;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1.85vh;
   cursor: pointer;
   background: linear-gradient(to right, rgb(240, 240, 240) 50%, white 50%);
   background-position: right top;
   background-size: 250% 100%;
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .btn-submit:hover {
   background-position: left top;
 }
 
-
 @media screen and (min-width: 0px) and (max-width: 369px) {
-  
   .contact {
     padding-top: 9vh;
     padding-bottom: 8vh;
@@ -123,99 +126,47 @@
     padding-left: 17.5vw;
     padding-right: 20vw;
   }
-  
+
   .textcontainer-about {
     text-align: left;
     padding-right: 0vw;
     margin-bottom: 6vh;
   }
-  
+
   .header-about {
     font-size: 10vw;
     margin-bottom: 0.22em;
   }
-  
+
   .text-about {
     font-size: 4vw;
   }
-  
+
   .contact-header {
     font-size: 10vw;
     margin-bottom: 0.22em;
   }
-  
+
   .contact-textinfo {
     font-size: 4vw;
   }
-  
+
   .form-control {
     width: 59.8vw;
     font-size: 3.2vw;
     padding: 1.48vh 0vw 1.48vh 3vw;
   }
-  
+
   .btn-submit {
     margin-top: 1.7vh;
     margin-left: 33.5vw;
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     font-size: 1.6vh;
     padding: 2.2vh 3vw 2.2vh 3vw;
   }
-
 }
 
 @media screen and (min-width: 370px) and (max-width: 390px) {
-
-  .contact {
-  padding-top: 9vh;
-  padding-bottom: 8vh;
-  flex-direction: column;
-  padding-left: 17.5vw;
-  padding-right: 20vw;
-}
-
-.textcontainer-about {
-  text-align: left;
-  padding-right: 0vw;
-  margin-bottom: 6vh;
-}
-
-.header-about {
-  font-size: 10vw;
-  margin-bottom: 0.22em;
-}
-
-.text-about {
-  font-size: 4vw;
-}
-
-.contact-header {
-  font-size: 10vw;
-  margin-bottom: 0.22em;
-}
-
-.contact-textinfo {
-  font-size: 4vw;
-}
-
-.form-control {
-  width: 59.8vw;
-  font-size: 3.2vw;
-  padding: 1.48vh 0vw 1.48vh 3vw;
-}
-
-.btn-submit {
-  margin-top: 1.7vh;
-  margin-left: 33.5vw;
-  border: #493011 solid 0.12em;
-  font-size: 1.6vh;
-  padding: 2.2vh 3vw 2.2vh 3vw;
-}
-
-}
-
-@media screen and (min-width: 391px) and (max-width: 600px) {
-
   .contact {
     padding-top: 9vh;
     padding-bottom: 8vh;
@@ -223,49 +174,95 @@
     padding-left: 17.5vw;
     padding-right: 20vw;
   }
-  
+
   .textcontainer-about {
     text-align: left;
     padding-right: 0vw;
     margin-bottom: 6vh;
   }
-  
+
   .header-about {
     font-size: 10vw;
     margin-bottom: 0.22em;
   }
-  
+
   .text-about {
     font-size: 4vw;
   }
-  
+
   .contact-header {
     font-size: 10vw;
     margin-bottom: 0.22em;
   }
-  
+
   .contact-textinfo {
     font-size: 4vw;
   }
-  
+
   .form-control {
     width: 59.8vw;
     font-size: 3.2vw;
     padding: 1.48vh 0vw 1.48vh 3vw;
   }
-  
+
   .btn-submit {
     margin-top: 1.7vh;
     margin-left: 33.5vw;
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     font-size: 1.6vh;
     padding: 2.2vh 3vw 2.2vh 3vw;
   }
+}
 
+@media screen and (min-width: 391px) and (max-width: 600px) {
+  .contact {
+    padding-top: 9vh;
+    padding-bottom: 8vh;
+    flex-direction: column;
+    padding-left: 17.5vw;
+    padding-right: 20vw;
+  }
+
+  .textcontainer-about {
+    text-align: left;
+    padding-right: 0vw;
+    margin-bottom: 6vh;
+  }
+
+  .header-about {
+    font-size: 10vw;
+    margin-bottom: 0.22em;
+  }
+
+  .text-about {
+    font-size: 4vw;
+  }
+
+  .contact-header {
+    font-size: 10vw;
+    margin-bottom: 0.22em;
+  }
+
+  .contact-textinfo {
+    font-size: 4vw;
+  }
+
+  .form-control {
+    width: 59.8vw;
+    font-size: 3.2vw;
+    padding: 1.48vh 0vw 1.48vh 3vw;
+  }
+
+  .btn-submit {
+    margin-top: 1.7vh;
+    margin-left: 33.5vw;
+    border: #1a1b1f solid 0.12em;
+    font-size: 1.6vh;
+    padding: 2.2vh 3vw 2.2vh 3vw;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-
   .contact {
     padding-top: 9vh;
     padding-bottom: 8vh;
@@ -273,52 +270,49 @@
     padding-left: 17.4vw;
     padding-right: 20vw;
   }
-  
+
   .textcontainer-about {
     text-align: left;
     padding-right: 0vw;
     margin-bottom: 6vh;
   }
-  
+
   .header-about {
     font-size: 7vw;
     margin-bottom: 0.22em;
   }
-  
+
   .text-about {
     font-size: 2.7vw;
   }
-  
+
   .contact-header {
     font-size: 7vw;
     margin-bottom: 0.22em;
   }
-  
+
   .contact-textinfo {
     font-size: 2.7vw;
   }
-  
+
   .form-control {
     width: 59.8vw;
     font-size: 2.1vw;
     padding: 1.48vh 0vw 1.48vh 3vw;
   }
-  
+
   .btn-submit {
     margin-top: 1.5vh;
     margin-left: 42.5vw;
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.1em;
     font-size: 1.2vh;
     padding: 2.2vh 3vw 2.2vh 3vw;
-  }  
-
+  }
 }
 
 @media screen and (min-width: 3000px) {
-  
   .btn-submit {
     margin-left: 26.2vw;
     margin-top: 3vh;
-  }  
-
+  }
 }

@@ -1,10 +1,8 @@
-
 @font-face {
-  font-family: 'agathoregular';
-  src: url('./Assets/agatho_regular-webfont.woff') format('woff');
+  font-family: "agathoregular";
+  src: url("./Assets/agatho_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 * {
@@ -18,13 +16,13 @@ html {
 }
 
 h1 {
-  font-family: 'agathoregular', serif;
+  font-family: "agathoregular", serif;
 }
 
 h2 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 p {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }

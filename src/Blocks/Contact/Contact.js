@@ -1,6 +1,6 @@
-import React from 'react';
-import './Contact.css';
-import emailjs from 'emailjs-com';
+import React from "react";
+import "./Contact.css";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   function sendEmail(e) {
@@ -8,10 +8,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        'service_aiuiv83',
-        'template_7fpr39b',
+        "service_aiuiv83",
+        "template_7fpr39b",
         e.target,
-        'user_P1K5jvPdIBMQI33nJDv36'
+        "user_P1K5jvPdIBMQI33nJDv36"
       )
       .then(
         (result) => {
@@ -26,26 +26,32 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contactLink">
-
       <div className="textcontainer-about">
         <h1 className="header-about">About</h1>
         <p className="text-about">
-        
-        I’m a frontend developer and designer from Jämtland, in northern Sweden currently based in Stockholm. I'm in my second year of the Frontend developer program on Hyper Island. I have previously worked with graphic design and packaging development.
-        <br />
-        <br />
-        I like problem solving and have a keen eye for details and beautiful designs. I am determination to always try to better myself with every project I work on. The main areas of my knowledge are HTML (5), CSS (3), JavaScript (native)
-        and React. I regularly use version control system (GIT) to maintain my code.
-        Based on the design part, the main areas of my knowledge are Illustrator, Indesign, Photoshop, Premiere Pro and Figma.
-        <br />
-        <br />
-        When I'm not coding, you can find me out in the nature, either on a mountain, in the forest or by the sea. Always looking for new places to explore with my friends and family.
-
+          I'm a <b>frontend developer</b>, <b>UX/UI designer</b> and{" "}
+          <b>graphic designer</b> based in Jämtland, northern Sweden. With a
+          background in graphic design and packaging development, I bring both
+          creativity and structure to digital projects.
+          <br />
+          <br />
+          I’m passionate about problem solving and have a sharp eye for detail,
+          usability, and visual design. I have solid experience using tools like
+          Figma, XD, Illustrator, InDesign, Photoshop, and Premiere Pro — from
+          early concepts to polished delivery, always with the user in focus. In
+          addition to design, I have strong technical skills in HTML5, CSS3,
+          JavaScript, and Vue. I work confidently with Git for version control
+          and constantly strive to grow and improve with every product I help
+          build.
+          <br />
+          <br />
+          When I’m not coding or designing, you’ll find me outdoors — hiking in
+          the mountains, walking through forests, or by the sea — always looking
+          for new places to explore with friends and family.
         </p>
       </div>
 
-      <div className="imagebanner-testdiv">
-      </div>
+      <div className="imagebanner-testdiv"></div>
 
       <div className="form-text-container">
         <div className="text-container-contact">
@@ -100,7 +106,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

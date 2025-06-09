@@ -14,9 +14,8 @@
   left: 0;
   width: 100%;
   height: 4.5vw;
-  border: #493011 solid 1px;
+  border: #1a1b1f solid 1px;
   z-index: 9;
-
 }
 
 .frame-right {
@@ -24,7 +23,7 @@
   right: 0;
   height: 100vh;
   width: 4.5vw;
-  border: #493011 solid 1px;
+  border: #1a1b1f solid 1px;
   z-index: 10;
 }
 
@@ -33,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 4.5vw;
-  border: #493011 solid 1px;
+  border: #1a1b1f solid 1px;
   z-index: 9;
 }
 
@@ -42,7 +41,7 @@
   left: 0;
   height: 100vh;
   width: 4.5vw;
-  border: #493011 solid 1px;
+  border: #1a1b1f solid 1px;
   z-index: 10;
 }
 
@@ -51,7 +50,7 @@
   z-index: 11;
   height: 4.5vw;
   width: 4.5vw;
-  border-bottom: #493011 solid 1px;
+  border-bottom: #1a1b1f solid 1px;
 }
 
 .box-right-top {
@@ -60,7 +59,7 @@
   z-index: 11;
   height: 4.5vw;
   width: 4.5vw;
-  border-bottom: #493011 solid 1px;
+  border-bottom: #1a1b1f solid 1px;
 }
 
 .box-left-bottom {
@@ -69,7 +68,7 @@
   z-index: 11;
   height: 4.5vw;
   width: 4.5vw;
-  border-top: #493011 solid 1px;
+  border-top: #1a1b1f solid 1px;
 }
 
 .box-right-bottom {
@@ -79,7 +78,7 @@
   z-index: 11;
   height: 4.5vw;
   width: 4.5vw;
-  border-top: #493011 solid 1px;
+  border-top: #1a1b1f solid 1px;
 }
 
 .text-container-start {
@@ -87,7 +86,7 @@
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  color: #493011;
+  color: #1a1b1f;
   padding-top: 24.5vh;
   margin-left: 9.4vw;
 }
@@ -101,7 +100,7 @@
 }
 
 #picture-me {
-  color: #493011;
+  color: #1a1b1f;
   display: inline;
   text-decoration-line: underline;
   text-decoration-thickness: 0.01em;
@@ -109,14 +108,14 @@
   cursor: pointer;
 }
 
-.imageme{
+.imageme {
   position: absolute;
   margin-left: 32vw;
   margin-top: -22vh;
   border-radius: 50%;
-  width: 2.6em; 
-  height: 2.6em; 
-  object-fit: cover; 
+  width: 2.6em;
+  height: 2.6em;
+  object-fit: cover;
   object-position: 100% 0%;
 }
 
@@ -132,7 +131,7 @@
 .scrollHeader > span {
   position: absolute;
   top: 0;
-  animation: slide 11s infinite;
+  animation: slide 10s infinite;
   font-weight: lighter;
   width: 250em;
 }
@@ -153,7 +152,8 @@
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -163,7 +163,7 @@
 
 .p-container {
   position: absolute;
-  border: #493011 solid 0.12em;
+  border: #1a1b1f solid 0.1em;
   border-radius: 50%;
   width: 8vw;
   height: 4.95vw;
@@ -176,13 +176,13 @@
 
 .linkScroll {
   text-decoration: none;
-  color: #493011;
+  color: #1a1b1f;
 }
 
 .hoverScroll {
   height: 1.2em;
   line-height: 1.2em;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 0.95vw;
   letter-spacing: 0.01em;
   position: relative;
@@ -207,7 +207,8 @@
   }
   25% {
     top: -1.2em;
-  }  50% {
+  }
+  50% {
     top: -2.4em;
   }
   75% {
@@ -219,22 +220,19 @@
   margin-left: 0.8vw;
 }
 
-
-
 @media screen and (min-width: 0px) and (max-width: 369px) {
-  
   .frame-top {
     height: 11vw;
   }
-  
+
   .frame-right {
     width: 11vw;
   }
-  
+
   .frame-bottom {
     height: 11vw;
   }
-  
+
   .frame-left {
     width: 11vw;
   }
@@ -243,17 +241,17 @@
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-top {
     height: 11vw;
     width: 11vw;
-    }
-  
+  }
+
   .box-left-bottom {
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-bottom {
     height: 11vw;
     width: 11vw;
@@ -264,12 +262,12 @@
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    color: #493011;
+    color: #1a1b1f;
     padding-top: 24.5vh;
     margin-left: 17vw;
     margin-right: 11vw;
   }
-  
+
   .header-header {
     font-size: 15vw;
     margin-bottom: 0.18em;
@@ -277,7 +275,7 @@
     line-height: 1.1;
     font-weight: lighter;
   }
-  
+
   .scrollHeader {
     height: 1.2em;
     margin-top: 2vh;
@@ -286,7 +284,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .scrollHeader > span {
     position: absolute;
     top: 0;
@@ -295,15 +293,15 @@
     width: 250em;
   }
 
-  .imageme{
+  .imageme {
     margin-left: -26vw;
     margin-top: 28.5vh;
-    width: 2.2em; 
-    height: 2.2em; 
+    width: 2.2em;
+    height: 2.2em;
   }
 
   .p-container {
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     border-radius: 50%;
     width: 17.7vw;
     height: 10.1vw;
@@ -313,16 +311,16 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .linkScroll {
     text-decoration: none;
-    color: #493011;
+    color: #1a1b1f;
   }
-  
+
   .hoverScroll {
     height: 1.2em;
     line-height: 1.2em;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 2vw;
     letter-spacing: 0.01em;
     position: relative;
@@ -333,24 +331,21 @@
     align-items: top;
     font-weight: 200;
   }
-
 }
 
-
 @media screen and (min-width: 370px) and (max-width: 390px) {
-
   .frame-top {
     height: 11vw;
   }
-  
+
   .frame-right {
     width: 11vw;
   }
-  
+
   .frame-bottom {
     height: 11vw;
   }
-  
+
   .frame-left {
     width: 11vw;
   }
@@ -359,17 +354,17 @@
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-top {
     height: 11vw;
     width: 11vw;
-    }
-  
+  }
+
   .box-left-bottom {
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-bottom {
     height: 11vw;
     width: 11vw;
@@ -380,12 +375,12 @@
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    color: #493011;
+    color: #1a1b1f;
     padding-top: 24.5vh;
     margin-left: 17vw;
     margin-right: 11vw;
   }
-  
+
   .header-header {
     font-size: 15vw;
     margin-bottom: 0.18em;
@@ -393,7 +388,7 @@
     line-height: 1.1;
     font-weight: lighter;
   }
-  
+
   .scrollHeader {
     height: 1.2em;
     margin-top: 2vh;
@@ -402,7 +397,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .scrollHeader > span {
     position: absolute;
     top: 0;
@@ -410,16 +405,16 @@
     font-weight: lighter;
     width: 250em;
   }
-  
-  .imageme{
+
+  .imageme {
     margin-left: -26vw;
     margin-top: 28.2vh;
-    width: 2.2em; 
-    height: 2.2em; 
+    width: 2.2em;
+    height: 2.2em;
   }
 
   .p-container {
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     border-radius: 50%;
     width: 17.7vw;
     height: 10.1vw;
@@ -429,16 +424,16 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .linkScroll {
     text-decoration: none;
-    color: #493011;
+    color: #1a1b1f;
   }
-  
+
   .hoverScroll {
     height: 1.2em;
     line-height: 1.2em;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 2vw;
     letter-spacing: 0.01em;
     position: relative;
@@ -449,23 +444,21 @@
     align-items: top;
     font-weight: 200;
   }
-
 }
 
 @media screen and (min-width: 391px) and (max-width: 600px) {
-
   .frame-top {
     height: 11vw;
   }
-  
+
   .frame-right {
     width: 11vw;
   }
-  
+
   .frame-bottom {
     height: 11vw;
   }
-  
+
   .frame-left {
     width: 11vw;
   }
@@ -474,17 +467,17 @@
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-top {
     height: 11vw;
     width: 11vw;
-    }
-  
+  }
+
   .box-left-bottom {
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-bottom {
     height: 11vw;
     width: 11vw;
@@ -495,12 +488,12 @@
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    color: #493011;
+    color: #1a1b1f;
     padding-top: 24.5vh;
     margin-left: 17vw;
     margin-right: 11vw;
   }
-  
+
   .header-header {
     font-size: 15vw;
     margin-bottom: 0.18em;
@@ -508,7 +501,7 @@
     line-height: 1.1;
     font-weight: lighter;
   }
-  
+
   .scrollHeader {
     height: 1.2em;
     margin-top: 2vh;
@@ -517,7 +510,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .scrollHeader > span {
     position: absolute;
     top: 0;
@@ -526,15 +519,15 @@
     width: 250em;
   }
 
-  .imageme{
+  .imageme {
     margin-left: -26vw;
     margin-top: 28.5vh;
-    width: 2.2em; 
-    height: 2.2em; 
+    width: 2.2em;
+    height: 2.2em;
   }
 
   .p-container {
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     border-radius: 50%;
     width: 17.7vw;
     height: 10.1vw;
@@ -544,16 +537,16 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .linkScroll {
     text-decoration: none;
-    color: #493011;
+    color: #1a1b1f;
   }
-  
+
   .hoverScroll {
     height: 1.2em;
     line-height: 1.2em;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 2vw;
     letter-spacing: 0.01em;
     position: relative;
@@ -564,23 +557,21 @@
     align-items: top;
     font-weight: 200;
   }
-
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-
   .frame-top {
     height: 11vw;
   }
-  
+
   .frame-right {
     width: 11vw;
   }
-  
+
   .frame-bottom {
     height: 11vw;
   }
-  
+
   .frame-left {
     width: 11vw;
   }
@@ -589,17 +580,17 @@
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-top {
     height: 11vw;
     width: 11vw;
-    }
-  
+  }
+
   .box-left-bottom {
     height: 11vw;
     width: 11vw;
   }
-  
+
   .box-right-bottom {
     height: 11vw;
     width: 11vw;
@@ -610,12 +601,12 @@
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    color: #493011;
+    color: #1a1b1f;
     padding-top: 24.5vh;
     margin-left: 17vw;
     margin-right: 11vw;
   }
-  
+
   .header-header {
     font-size: 11vw;
     margin-bottom: 0.18em;
@@ -623,7 +614,7 @@
     line-height: 1.1;
     font-weight: lighter;
   }
-  
+
   .scrollHeader {
     height: 1.2em;
     margin-top: 2vh;
@@ -632,7 +623,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .scrollHeader > span {
     position: absolute;
     top: 0;
@@ -642,7 +633,7 @@
   }
 
   .p-container {
-    border: #493011 solid 0.12em;
+    border: #1a1b1f solid 0.12em;
     border-radius: 50%;
     width: 17.7vw;
     height: 10.1vw;
@@ -652,16 +643,16 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .linkScroll {
     text-decoration: none;
-    color: #493011;
+    color: #1a1b1f;
   }
-  
+
   .hoverScroll {
     height: 1.2em;
     line-height: 1.2em;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 2vw;
     letter-spacing: 0.01em;
     position: relative;
@@ -673,38 +664,34 @@
     font-weight: 200;
   }
 
-  .imageme{
+  .imageme {
     margin-left: 1.9vw;
     margin-top: -28.7vh;
-    width: 1.8em; 
-    height: 1.8em; 
+    width: 1.8em;
+    height: 1.8em;
   }
-
 }
 
 @media screen and (min-width: 2500px) and (max-width: 2999px) {
-
-  .imageme{
+  .imageme {
     margin-left: 33.5vw;
     margin-top: -21vh;
-    width: 2.5em; 
-    height: 2.5em; 
+    width: 2.5em;
+    height: 2.5em;
   }
-
 }
 
 @media screen and (min-width: 3000px) {
-  
   .text-container-start {
     padding-top: 22vh;
   }
-  
+
   .header-header {
     font-size: 6.7vw;
     margin-bottom: 0.18em;
     line-height: 1.09;
   }
-  
+
   .scrollHeader {
     height: 1.2em;
     font-size: 6.7vw;
@@ -715,10 +702,10 @@
     margin-top: -5.5vh;
   }
 
-  .imageme{
+  .imageme {
     margin-left: 33vw;
     margin-top: -16vh;
-    width: 2.2em; 
-    height: 2.2em; 
+    width: 2.2em;
+    height: 2.2em;
   }
 }

@@ -31,8 +31,8 @@
   display: block;
   width: 32px;
   height: 32px;
-  background: rgb(255, 217, 235);
-  border-top: #493011 solid 1px;
+  background: rgb(252, 219, 210);
+  border-top: #1a1b1f solid 1px;
 }
 
 .lds-heart div:before {
