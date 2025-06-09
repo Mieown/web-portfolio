@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.ae2470f0.chunk.css",
-    "main.js": "/web-portfolio/static/js/main.6ef559f0.chunk.js",
-    "main.js.map": "/web-portfolio/static/js/main.6ef559f0.chunk.js.map",
+    "main.css": "/web-portfolio/static/css/main.6c8f2280.chunk.css",
+    "main.js": "/web-portfolio/static/js/main.fe4ddc4b.chunk.js",
+    "main.js.map": "/web-portfolio/static/js/main.fe4ddc4b.chunk.js.map",
     "runtime-main.js": "/web-portfolio/static/js/runtime-main.ec45330b.js",
     "runtime-main.js.map": "/web-portfolio/static/js/runtime-main.ec45330b.js.map",
     "static/js/2.4d7659e8.chunk.js": "/web-portfolio/static/js/2.4d7659e8.chunk.js",
     "static/js/2.4d7659e8.chunk.js.map": "/web-portfolio/static/js/2.4d7659e8.chunk.js.map",
     "index.html": "/web-portfolio/index.html",
-    "static/css/main.ae2470f0.chunk.css.map": "/web-portfolio/static/css/main.ae2470f0.chunk.css.map",
+    "static/css/main.6c8f2280.chunk.css.map": "/web-portfolio/static/css/main.6c8f2280.chunk.css.map",
     "static/js/2.4d7659e8.chunk.js.LICENSE.txt": "/web-portfolio/static/js/2.4d7659e8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/web-portfolio/static/media/agatho_regular-webfont.b48140a3.woff",
     "static/media/api.f8b6466f.png": "/web-portfolio/static/media/api.f8b6466f.png",
@@ -76,7 +76,6 @@
     "static/media/shoelace-pink.f4249042.png": "/web-portfolio/static/media/shoelace-pink.f4249042.png",
     "static/media/shoelace-purple.47eb58ad.png": "/web-portfolio/static/media/shoelace-purple.47eb58ad.png",
     "static/media/shoelace-yellow.84895c9f.png": "/web-portfolio/static/media/shoelace-yellow.84895c9f.png",
-    "static/media/shoelace.ebded77b.jpeg": "/web-portfolio/static/media/shoelace.ebded77b.jpeg",
     "static/media/simone1.5b60f561.png": "/web-portfolio/static/media/simone1.5b60f561.png",
     "static/media/simone2.b2b11507.png": "/web-portfolio/static/media/simone2.b2b11507.png",
     "static/media/simone3.94ac0f40.png": "/web-portfolio/static/media/simone3.94ac0f40.png",
@@ -100,7 +99,7 @@
   "entrypoints": [
     "static/js/runtime-main.ec45330b.js",
     "static/js/2.4d7659e8.chunk.js",
-    "static/css/main.ae2470f0.chunk.css",
-    "static/js/main.6ef559f0.chunk.js"
+    "static/css/main.6c8f2280.chunk.css",
+    "static/js/main.fe4ddc4b.chunk.js"
   ]
 }
